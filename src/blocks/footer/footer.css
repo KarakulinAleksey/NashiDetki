@@ -1,0 +1,10 @@
+.footer{
+  display: grid;
+  grid-template-columns: 4fr 1fr 1fr;
+  grid-template-rows: min-content min-content ;
+  width: 100%;
+  margin-top: 60px;
+  padding-top: 20px;
+  padding-bottom: 50px;
+  border-top: 1px solid #e3e3e3;
+}

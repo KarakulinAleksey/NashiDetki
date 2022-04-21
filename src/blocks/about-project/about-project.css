@@ -1,0 +1,8 @@
+.about-project{
+display: grid;
+justify-items: center;
+grid-template-columns: 1fr 1fr;
+grid-template-rows: min-content min-content;
+padding-left: 30px;
+padding-right: 30px;
+}

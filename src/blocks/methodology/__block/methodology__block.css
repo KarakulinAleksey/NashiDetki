@@ -1,0 +1,20 @@
+.methodology__block{
+  width: 550px;
+  height: 360px;
+  border-radius: 5px;
+  background-size: cover;
+  justify-self: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0.6;
+  color: #fff;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+}
+
+.methodology__block:hover{
+  opacity: 1;
+  cursor: pointer;
+}

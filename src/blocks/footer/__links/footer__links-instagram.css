@@ -1,0 +1,8 @@
+.footer__links-instagram {
+  width: 30px;
+  height: 30px;
+  background-image: url('../../../image/instagram.svg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-bottom: 10px;
+}

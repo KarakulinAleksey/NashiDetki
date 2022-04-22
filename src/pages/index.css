@@ -32,7 +32,10 @@
 
 @import url('../blocks/footer/__author/footer__author.css');
 @import url('../blocks/footer/__image/footer__image.css');
-@import url('../blocks/footer/__links/footer__links-item.css');
+@import url('../blocks/footer/__links/footer__links-vk.css');
+@import url('../blocks/footer/__links/footer__links-telegram.css');
+@import url('../blocks/footer/__links/footer__links-instagram.css');
+@import url('../blocks/footer/__links/footer__links-email.css');
 @import url('../blocks/footer/__links/footer__links-link.css');
 @import url('../blocks/footer/__links/footer__links.css');
 @import url('../blocks/footer/__menu/footer__menu-item.css');

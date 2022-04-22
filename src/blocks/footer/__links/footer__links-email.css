@@ -1,0 +1,8 @@
+.footer__links-email{
+  width: 30px;
+  height: 30px;
+  background-image: url('../../../image/email.svg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-bottom: 7px;
+}

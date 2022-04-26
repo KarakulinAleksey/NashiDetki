@@ -6,3 +6,11 @@
   padding-left: 30px;
   padding-right: 30px;
 }
+
+@media screen and (max-width: 760px) {
+  .about{
+    grid-template-columns: 1fr;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+}

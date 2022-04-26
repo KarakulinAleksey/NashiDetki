@@ -1,5 +1,13 @@
 .about__image{
   width: 400px;
   height: 400px;
-  justify-self: start;
+  justify-self: center;
+
+}
+
+@media screen and (max-width: 760px) {
+  .about__image{
+    grid-column: 1/2;
+    grid-row: 2/3;
+  }
 }

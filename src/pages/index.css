@@ -10,7 +10,7 @@
 @import url('../blocks/header/__menu/header__menu-link.css');
 @import url('../blocks/header/__image/header__image.css');
 
-@import url('../blocks/promo/__image/promo__image.css');
+/* @import url('../blocks/promo/__image/promo__image.css'); */
 
 @import url('../blocks/about-project/__image/about-project__image.css');
 @import url('../blocks/about-project/__text-block/about-project__text-block.css');

@@ -4,9 +4,9 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./src/pages/index.css" />
+    <!-- <link rel="stylesheet" href="./pages/index.css" /> -->
     <title>NashiDetki</title>
-    <link rel="icon" href="./src/image/book-opened.svg" />
+    <link rel="icon" href="./image/book-opened.svg" />
     <meta name="description" content="Студия раннего развития Наши Детки" />
     <meta
       name="keywords"
@@ -19,7 +19,7 @@
     <header class="header">
       <img
         class="header__image"
-        src="./src/image/baner.jpg"
+        src="<%=require('./image/baner.jpg')%>"
         alt="банер"
       />
       <ul class="header__menu">
@@ -92,11 +92,32 @@
 
       </section>
 
+      <section class="methodology">
+        <h2 class="methodology__title title-section">
+          Методики которые я использую
+        </h2>
+        <ul class="methodology__list">
+          <li class="methodology__block methodology__block-image-1">
+            Методика Зайцева
+          </li>
+          <li class="methodology__block methodology__block-image-2">
+            Методика Железновой
+          </li>
+          <li class="methodology__block methodology__block-image-3">
+            Методика Монтессори
+          </li>
+          <li class="methodology__block methodology__block-image-4">
+            Методика Домана
+          </li>
+        </ul>
+
+      </section>
+
       <section class="about">
         <h2 class="about__title title-section">Немного обо мне</h2>
         <img
         class="about__image"
-        src="./src/image/about.jpg"
+        src="<%=require('./image/about.jpg')%>"
         alt="фото автора"
       />
         <p class="about__text-block text-block">
@@ -117,7 +138,7 @@
     </main>
 
     <footer class="footer">
-      <img class="footer__image" src="./src/image/baner.jpg" alt="банер">
+      <img class="footer__image" src="<%=require('./image/baner.jpg')%>" alt="банер">
       <p class="footer__author text-block">
         &copy; 2010-2022 ИП Каракулина А.В
         ИНН 02623536222
@@ -161,5 +182,8 @@
       </ul>
 
     </footer>
+
+    <script type="module" src="./pages/index.js"></script>
+
   </body>
 </html>

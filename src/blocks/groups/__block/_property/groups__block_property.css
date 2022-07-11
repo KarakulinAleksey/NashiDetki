@@ -1,3 +1,11 @@
 .groups__block_property{
+  flex-direction: row;
+  padding: 3%;
+}
 
+@media screen and (max-width: 732px) {
+  .groups__block_property{
+    flex-direction: column;
+    padding: 10%;
+  }
 }

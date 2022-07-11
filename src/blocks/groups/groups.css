@@ -1,5 +1,7 @@
 .groups {
   margin-top: 20px;
-  padding-left: 30px;
-  padding-right: 30px;
+  width: 90%;
+  justify-self: center;
+  /* padding-left: 3%;
+  padding-right: 3%; */
 }

@@ -1,6 +1,8 @@
 .groups__title{
   border-top: 1px solid #e3e3e3;
-  margin: 30px 0 20px;
+  /* margin: 30px 0 20px; */
+  margin: 0;
+  margin-top: 30px;
   padding-top: 20px;
   text-align: left;
   width: 100%;

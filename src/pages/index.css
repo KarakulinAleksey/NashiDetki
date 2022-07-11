@@ -10,6 +10,8 @@
 @import url('../blocks/header/__menu/header__menu-link.css');
 @import url('../blocks/header/__image/header__image.css');
 
+@import url('../blocks/content/content.css');
+
 @import url('../blocks/groups/groups.css');
 @import url('../blocks/groups/__list/groups__list.css');
 @import url('../blocks/groups/__title/groups__title.css');
@@ -18,6 +20,9 @@
 @import url('../blocks/groups/__block/_text/groups__block_text.css');
 @import url('../blocks/groups/__block/_title/groups__block_titile.css');
 @import url('../blocks/groups/__block/_property/groups__block_property.css');
+@import url('../blocks/groups/__block/_property/groups__block_property-image.css');
+@import url('../blocks/groups/__block/_property/groups__block_property-title.css');
+@import url('../blocks/groups/__block/_property/groups__block_property-block-text.css');
 @import url('../blocks/groups/__block/_position/groups__block_position-block-1.css');
 @import url('../blocks/groups/__block/_position/groups__block_position-block-2.css');
 @import url('../blocks/groups/__block/_position/groups__block_position-block-3.css');

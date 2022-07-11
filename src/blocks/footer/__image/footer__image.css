@@ -1,3 +1,4 @@
 .footer__image{
- width: 350px;
+  width: 100%;
+  max-width: 60%;
 }

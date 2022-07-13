@@ -1,0 +1,11 @@
+.methodology__block_property-image{
+  width: 30%;
+  margin-right: 5%;
+}
+
+@media screen and (max-width: 1024px) {
+  .methodology__block_property-image{
+    width: 60%;
+    margin: 0;
+  }
+}

@@ -1,7 +1,7 @@
 .groups__block{
   display: flex;
   flex-direction: column;
-  min-width: 320px;
+  /* min-width: 320px; */
   /* align-items: center; */
   /* display: grid;
   grid-template-rows: repeat(3, minmax(min-content, max-content));
@@ -12,4 +12,9 @@
   box-shadow: 4px 4px 10px #e3e3e3;
   padding: 10%;
   box-sizing: border-box;
+  transition: transform 0.2s linear 0.1s;
+}
+
+.groups__block:hover {
+  transform: scale(1.02);
 }

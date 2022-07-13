@@ -41,6 +41,17 @@
 @import url('../blocks/methodology/__block-image/methodology__block-image-3.css');
 @import url('../blocks/methodology/__block-image/methodology__block-image-4.css');
 @import url('../blocks/methodology/__block/methodology__block.css');
+@import url('../blocks/methodology/__block/_image/methodology__block_image.css');
+@import url('../blocks/methodology/__block/_position/methodology__block_position-block-1.css');
+@import url('../blocks/methodology/__block/_position/methodology__block_position-block-2.css');
+@import url('../blocks/methodology/__block/_position/methodology__block_position-block-3.css');
+@import url('../blocks/methodology/__block/_position/methodology__block_position-block-4.css');
+@import url('../blocks/methodology/__block/_property/methodology__block_property-block-text.css');
+@import url('../blocks/methodology/__block/_property/methodology__block_property-image.css');
+@import url('../blocks/methodology/__block/_property/methodology__block_property-title.css');
+@import url('../blocks/methodology/__block/_property/methodology__block_property.css');
+@import url('../blocks/methodology/__block/_text/methodology__block_text.css');
+@import url('../blocks/methodology/__block/_title/methodology__block_titile.css');
 @import url('../blocks/methodology/__title/methodology__title.css');
 @import url('../blocks/methodology/__list/methodology__list.css');
 @import url('../blocks/methodology/methodology.css');

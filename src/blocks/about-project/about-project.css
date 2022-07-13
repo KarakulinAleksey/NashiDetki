@@ -3,8 +3,8 @@ display: grid;
 justify-items: center;
 grid-template-columns: repeat(2, 1fr);
 grid-template-rows: min-content min-content;
-padding-left: 30px;
-padding-right: 30px;
+/* padding-left: 30px;
+padding-right: 30px; */
 }
 
 @media screen and (max-width: 760px) {

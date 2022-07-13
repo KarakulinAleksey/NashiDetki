@@ -1,0 +1,10 @@
+.methodology__block_property-title{
+  margin-top: 0;
+}
+
+@media screen and (max-width: 1024px) {
+  .methodology__block_property-title{
+    margin-top: 5%;
+    margin-bottom: 5%;
+  }
+}

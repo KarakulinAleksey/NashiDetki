@@ -1,16 +1,12 @@
 .about {
-  display: grid;
-  justify-items: center;
-  grid-template-columns: 1fr 1.5fr;
-  grid-template-rows: min-content min-content;
-  /* padding-left: 30px;
-  padding-right: 30px; */
+  margin-top: 20px;
+  width: 90%;
 }
 
 @media screen and (max-width: 760px) {
   .about{
-    grid-template-columns: 1fr;
+    /* grid-template-columns: 1fr;
     padding-left: 30px;
-    padding-right: 30px;
+    padding-right: 30px; */
   }
 }

@@ -1,14 +1,10 @@
 .about-project{
-display: grid;
-justify-items: center;
-grid-template-columns: repeat(2, 1fr);
-grid-template-rows: min-content min-content;
-/* padding-left: 30px;
-padding-right: 30px; */
+  margin-top: 20px;
+  width: 90%;
 }
 
 @media screen and (max-width: 760px) {
   .about-project{
-    grid-template-columns: repeat(1, 1fr);
+
   }
 }

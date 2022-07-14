@@ -1,24 +1,8 @@
 .methodology__block {
-  /* width: 550px; */
-  /* width: 100%;
-  height: auto;
-  aspect-ratio: 16/9;
-  border-radius: 5px;
-  background-size: cover;
-  justify-self: center;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  opacity: 0.6;
-  color: #fff;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 24px;
-  background-position: center; */
   border: 1px solid #e3e3e3;
   border-radius: 2%;
-  background-color: #8bc34a80;
-  box-shadow: 4px 4px 10px #e3e3e3;
+  /* background-color: #8bc34a80; */
+  box-shadow: 4px 4px 10px #8bc34a17;
   box-sizing: border-box;
   display: flex;
   flex-direction: column;

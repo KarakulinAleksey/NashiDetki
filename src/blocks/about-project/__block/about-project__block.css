@@ -1,0 +1,26 @@
+.about-project__block {
+  display: flex;
+  flex-direction: row;
+  padding: 5%;
+  width: 95%;
+  margin: 0 auto;
+  /* background-color: #2ca5df69; */
+  border: 1px solid #e3e3e3;
+  border-radius: 2%;
+  /* box-shadow: 4px 4px 10px #e3e3e3; */
+  box-shadow: 4px 4px 10px #2ca5df17;
+  box-sizing: border-box;
+  transition: transform 0.2s linear 0.1s;
+
+}
+
+.about-project__block:hover {
+  transform: scale(1.02);
+}
+
+@media screen and (max-width:1024px) {
+  .about-project__block{
+    flex-direction: column-reverse;
+  }
+
+}

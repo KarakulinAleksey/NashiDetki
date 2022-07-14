@@ -1,0 +1,15 @@
+.about__block_image{
+  align-self: center;
+  margin-right: 5%;
+  width: 45%;
+
+}
+
+@media screen and (max-width: 1024px){
+  .about__block_image {
+    margin: 0;
+    width: 60%;
+}
+}
+
+

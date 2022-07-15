@@ -4,11 +4,9 @@
   padding: 5%;
   width: 95%;
   margin: 0 auto;
-  /* background-color: #2ca5df69; */
   border: 1px solid #e3e3e3;
   border-radius: 2%;
-  /* box-shadow: 4px 4px 10px #e3e3e3; */
-  box-shadow: 4px 4px 10px #2ca5df17;
+  box-shadow: 4px 4px 10px #2ca5df40;
   box-sizing: border-box;
   transition: transform 0.2s linear 0.1s;
 

@@ -4,4 +4,15 @@
   grid-row-start: 1;
   grid-row-end: 3;
   list-style-type: none;
+  margin: 0;
+  padding: 0;
+  justify-self: center;
+}
+
+@media screen and (max-width: 680px)  {
+  .footer__links{
+    grid-column: 2/3;
+    grid-row: 3/4;
+  }
+
 }

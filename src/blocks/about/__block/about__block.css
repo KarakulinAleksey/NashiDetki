@@ -1,9 +1,7 @@
 .about__block {
-  /* background-color: #ffc10775; */
   border: 1px solid #e3e3e3;
   border-radius: 2%;
-  /* box-shadow: 4px 4px 10px #e3e3e3; */
-    box-shadow: 4px 4px 10px #ffc10717;
+  box-shadow: 4px 4px 10px #ffc10740;
   box-sizing: border-box;
   display: flex;
   flex-direction: row;

@@ -6,3 +6,11 @@
   list-style-type: none;
 
 }
+
+@media screen and (max-width: 680px)  {
+  .footer__menu{
+    grid-column: 1/2;
+    grid-row: 3/4;
+  }
+
+}

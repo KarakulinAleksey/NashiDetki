@@ -6,3 +6,10 @@
   letter-spacing: -1px;
   line-height: 27px;
 }
+
+@media screen and (max-width: 374px) {
+  .title-section{
+    font-size: 19px;
+  }
+
+}

@@ -1,9 +1,9 @@
 .header__menu {
   list-style-type: none;
   display: flex;
+  flex-wrap: wrap;
   box-sizing: border-box;
   padding: 0;
-
   width: 100%;
   justify-content: space-evenly;
 }

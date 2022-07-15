@@ -58,7 +58,7 @@
 .footer__links-instagram{background-image:url(d6a6364c44de1059c98a.svg);background-repeat:no-repeat;background-size:cover;height:30px;margin-bottom:10px;width:30px}
 .footer__links-email{background-image:url(178fb71af0f6177fc93f.svg);background-repeat:no-repeat;background-size:cover;height:30px;margin-bottom:7px;width:30px}
 .footer__links-link{display:block;height:30px;width:30px}
-.footer__links{grid-column-end:4;grid-column-start:3;grid-row-end:3;grid-row-start:1;justify-self:center;list-style-type:none;margin:0;padding:0}@media screen and (max-width:680px){.footer__links{grid-column:2/3;grid-row:3/4}}
+.footer__links{grid-column-end:4;grid-column-start:3;grid-row-end:3;grid-row-start:1;justify-self:center;list-style-type:none;margin:0;padding:0}@media screen and (max-width:680px){.footer__links{grid-column:2/3;grid-row:3/4;margin-left:46px}}
 .footer__menu-item{margin-bottom:5px}
 .footer__menu-link{color:#000;font-size:16px;font-style:normal;font-weight:400;line-height:17px;text-decoration:none}
 .footer__menu{grid-column-end:3;grid-column-start:2;grid-row-end:3;grid-row-start:1;list-style-type:none}@media screen and (max-width:680px){.footer__menu{grid-column:1/2;grid-row:3/4}}

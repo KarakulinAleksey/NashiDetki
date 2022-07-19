@@ -13,7 +13,7 @@
 .groups__title{border-top:1px solid #e3e3e3;margin:30px 0 0;padding-top:20px;text-align:left;text-shadow:2px 2px 2px #e3e3e3;width:100%}
 .groups__block{border:1px solid #e3e3e3;border-radius:2%;box-shadow:4px 4px 10px #e3e3e3;box-sizing:border-box;display:flex;flex-direction:column;padding:10%;transition:transform .2s linear .1s}.groups__block:hover{cursor:pointer;transform:scale(1.02)}
 .groups__block_image{align-self:center;width:60%}
-.groups__block_text{margin:0;text-align:justify}
+.groups__block_text{height:200px;margin:0;overflow:hidden;text-align:justify;text-overflow:ellipsis}
 .groups__block_title{margin-bottom:5%;margin-top:5%}
 .groups__block_property{flex-direction:row;padding:3%}@media screen and (max-width:732px){.groups__block_property{flex-direction:column;padding:10%}}
 .groups__block_property-image{margin-right:5%;width:30%}@media screen and (max-width:732px){.groups__block_property-image{margin:0;width:60%}}
@@ -41,7 +41,7 @@
 .methodology__block_property-image{margin-right:5%;width:30%}@media screen and (max-width:1024px){.methodology__block_property-image{margin:0;width:60%}}
 .methodology__block_property-title{margin-top:0}@media screen and (max-width:1024px){.methodology__block_property-title{margin-bottom:5%;margin-top:5%}}
 .methodology__block_property{flex-direction:row;padding:3%}@media screen and (max-width:1024px){.methodology__block_property{flex-direction:column;padding:10%}}
-.methodology__block_text{margin:0;text-align:justify}
+.methodology__block_text{height:200px;margin:0;overflow:hidden;text-align:justify;text-overflow:ellipsis}
 .methodology__block_title{margin-bottom:5%;margin-top:5%}
 .methodology__title{border-top:1px solid #8bc34a80;margin:30px 0 0;padding-top:20px;text-align:left;text-shadow:2px 2px 2px #e3e3e3;width:100%}
 .methodology__list{display:grid;gap:15px 15px;grid-template-columns:repeat(3,1fr);grid-template-rows:repeat(2,-webkit-min-content);grid-template-rows:repeat(2,min-content);margin:0 auto;padding:0;width:95%}@media screen and (max-width:1024px){.methodology__list{grid-template-columns:repeat(2,1fr)}}@media screen and (max-width:732px){.methodology__list{grid-template-columns:repeat(1,1fr)}}

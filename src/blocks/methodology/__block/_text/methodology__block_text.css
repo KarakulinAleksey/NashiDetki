@@ -1,5 +1,7 @@
 .methodology__block_text {
-  /* margin: 0 10% 10% 10%; */
+  height: 200px;
   margin: 0;
+  overflow: hidden;
   text-align: justify;
+  text-overflow: ellipsis;
 }

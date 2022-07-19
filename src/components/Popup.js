@@ -6,10 +6,10 @@ export default class Popup{
   ) {
     this._popupTemplate = popupTemplate;
     this._popupElement = this._getTemplatePopup();
-
     this._popupButtonExit = this._popupElement.querySelector('.popup__button-exit');
-    // this._popup = page.querySelector('.popup');
-    // this._popupButtonExit = popup.querySelector('.popup__button-exit');
+    this._popupImage = this._popupElement.querySelector('.popup__image');
+    this._popupTitle = this._popupElement.querySelector('.popup__title');
+    this._popupText = this._popupElement.querySelector('.popup__text');
   }
 
   _getTemplatePopup(){
@@ -26,7 +26,10 @@ export default class Popup{
     })
   }
 
-  generatePopup(){
+  generatePopup(itemImage, itemTitle, itemText){
+   this._popupImage.src = itemImage.src;
+   this._popupTitle.textContent = itemTitle.textContent;
+   this._popupText.textContent = itemText.textContent;
    this._getTemplatePopup();
    this._setEventListenerButtonExit();
    return this._popupElement;

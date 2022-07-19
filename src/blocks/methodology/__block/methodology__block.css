@@ -11,7 +11,6 @@
 }
 
 .methodology__block:hover{
-  /* opacity: 1;
-  cursor: pointer; */
+  cursor: pointer;
   transform: scale(1.02);
 }

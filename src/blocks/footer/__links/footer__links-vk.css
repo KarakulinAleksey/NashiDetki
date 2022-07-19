@@ -5,4 +5,9 @@
   background-repeat: no-repeat;
   background-size: cover;
   margin-bottom: 10px;
+  opacity: 0.8;
+}
+
+.footer__links-vk:hover{
+  opacity: 1;
 }

@@ -74,3 +74,15 @@
 
 @import url('../blocks/title-section/title-section.css');
 @import url('../blocks/text-block/text-block.css');
+
+@import url('../blocks/popup/popup.css');
+@import url('../blocks/popup/__container/popup__container.css');
+@import url('../blocks/popup/__image/popup__image.css');
+@import url('../blocks/popup/__property/popup__property-image.css');
+@import url('../blocks/popup/__property/popup__property-title.css');
+@import url('../blocks/popup/__property/popup__property.css');
+@import url('../blocks/popup/__text/popup__text.css');
+@import url('../blocks/popup/__title/popup__titile.css');
+@import url('../blocks/popup/__show/popup__show.css');
+@import url('../blocks/popup/__button/popup__button-exit.css');
+

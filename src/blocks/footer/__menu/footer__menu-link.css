@@ -5,4 +5,10 @@
   font-weight: 400;
   font-size: 16px;
   line-height: 17px;
+  opacity: 0.6;
+}
+
+.footer__menu-link:hover{
+  opacity: 1;
+  border-bottom: 1px solid #000;
 }

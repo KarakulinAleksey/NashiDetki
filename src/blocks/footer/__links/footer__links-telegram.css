@@ -5,4 +5,9 @@
   background-repeat: no-repeat;
   background-size: cover;
   margin-bottom: 10px;
+  opacity: 0.6;
+}
+
+.footer__links-telegram:hover{
+  opacity: 1;
 }

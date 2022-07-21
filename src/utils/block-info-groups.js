@@ -1,6 +1,6 @@
 export const blockInfoGroups = [
   {
-    groupImage: "<%=require('./image/frukta.jpg')%>",
+    groupImage: "",
     groupTitle: "Вместе с мамой",
     groupText:
       "Вместе с мамойLorem ipsum dolor sit, amet consectetur adipisicing elit. Illum \
@@ -13,7 +13,7 @@ export const blockInfoGroups = [
       nostrum veniam praesentium nam consequuntur."
   },
   {
-    groupImage: "./image/frukta.jpg",
+    groupImage: "",
     groupTitle: "Вместе с папой",
     groupText:
       "Вместе с папойLorem ipsum dolor sit, amet consectetur adipisicing elit. Illum \
@@ -26,7 +26,7 @@ export const blockInfoGroups = [
       nostrum veniam praesentium nam consequuntur."
   },
   {
-    groupImage: "./image/frukta.jpg",
+    groupImage: "",
     groupTitle: "Вместе с бабушкой",
     groupText:
       "Вместе с бабушкойLorem ipsum dolor sit, amet consectetur adipisicing elit. Illum \
@@ -39,7 +39,7 @@ export const blockInfoGroups = [
       nostrum veniam praesentium nam consequuntur."
   },
   {
-    groupImage: "./image/frukta.jpg",
+    groupImage: "",
     groupTitle: "Вместе с дедушкой",
     groupText:
       "Вместе с дедушкойLorem ipsum dolor sit, amet consectetur adipisicing elit. Illum \
@@ -52,7 +52,7 @@ export const blockInfoGroups = [
       nostrum veniam praesentium nam consequuntur."
   },
   {
-    groupImage: "./image/frukta.jpg",
+    groupImage: "",
     groupTitle: "Вместе с дядей",
     groupText:
       "Вместе с дядейLorem ipsum dolor sit, amet consectetur adipisicing elit. Illum \
@@ -65,7 +65,7 @@ export const blockInfoGroups = [
       nostrum veniam praesentium nam consequuntur."
   },
   {
-    groupImage: "./image/frukta.jpg",
+    groupImage: "",
     groupTitle: "Вместе с тётей",
     groupText:
       "Вместе с тётейLorem ipsum dolor sit, amet consectetur adipisicing elit. Illum \
@@ -78,7 +78,7 @@ export const blockInfoGroups = [
       nostrum veniam praesentium nam consequuntur."
   },
   {
-    groupImage: "./image/frukta.jpg",
+    groupImage: "",
     groupTitle: "Вместе с собакой",
     groupText:
       "Вместе с собакойLorem ipsum dolor sit, amet consectetur adipisicing elit. Illum \

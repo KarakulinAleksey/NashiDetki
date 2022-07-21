@@ -1,4 +1,3 @@
-// import { popupButtonExit } from "../utils/var.js";
 
 export default class Popup{
   constructor(

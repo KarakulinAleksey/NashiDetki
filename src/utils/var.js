@@ -14,7 +14,7 @@ export const methodologyBlockTitle = methodology.querySelectorAll('.methodology_
 export const methodologyBlockText = methodology.querySelectorAll('.methodology__block_text');
 
 
-export const aboutProject = content.querySelector('.about-project');
+const aboutProject = content.querySelector('.about-project');
 export const aboutProjectTitle = aboutProject.querySelector('.about-project__title');
 export const aboutProjectBlock = aboutProject.querySelector('.about-project__block');
 export const aboutProjectImage = aboutProjectBlock.querySelector('.about-project__block_image');

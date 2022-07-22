@@ -1,0 +1,25 @@
+.contact__block {
+  border: 1px solid #e3e3e3;
+  border-radius: 2%;
+  box-shadow: 4px 4px 10px #9c27b040;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 0 auto;
+  padding: 5%;
+  transition: transform .2s linear .1s;
+  width: 95%;
+}
+
+.contact__block:hover {
+  transform: scale(1.02);
+  cursor: pointer;
+}
+
+@media screen and (max-width: 1024px){
+  .contact__block {
+    flex-direction: column-reverse;
+    align-items: center;
+}
+}

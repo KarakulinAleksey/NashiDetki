@@ -20,7 +20,7 @@
 @media screen and (max-width: 1024px) {
   .popup__button-exit {
     left: 100%;
-    top: -7%;
+    top: -15%;
   }
 }
 

@@ -1,0 +1,15 @@
+.button-pay{
+  cursor:pointer;
+  text-align: center;
+  vertical-align: middle;
+  cursor: pointer;
+  white-space: nowrap;
+  border-radius: 4px;
+  display: inline-block;
+  background-color: #98cf30;
+  border: none;
+  width: 95%;
+  padding: 7px 12px;
+
+
+}

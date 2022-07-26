@@ -11,8 +11,8 @@
    </script>
 
     <!-- <link rel="stylesheet" href="./pages/index.css" /> -->
-    <title>NashiDetki</title>
-    <link rel="icon" href="./image/book-opened.svg" />
+    <title>Наши детки</title>
+    <link rel="icon" href= "<%=require('./image/book-opened.svg')%>" />
     <meta name="description" content="Студия раннего развития Наши Детки" />
     <meta
       name="keywords"
@@ -33,10 +33,10 @@
           <a class="header__menu-link" href="#"> Главная </a>
         </li>
         <li class="header__menu-item">
-          <a class="header__menu-link" href="#"> Группы </a>
+          <a class="header__menu-link" href="#"> Оплатить </a>
         </li>
         <li class="header__menu-item">
-          <a class="header__menu-link" href="#"> Общение </a>
+          <a class="header__menu-link" href="#"> Объявления </a>
         </li>
         <li class="header__menu-item">
           <a class="header__menu-link" href="#"> Контакты </a>
@@ -68,17 +68,6 @@
             />
             <h3 class="groups__block_title">Вместе с мамой</h3>
             <p class="groups__block_text text-block"></p>
-
-            <a onclick="ipayCheckout({
-              currency:'RUB',
-              order_number:'',
-              description: 'Н. В. Гоголь. Вечера на хуторе близ Диканьки'},
-              function(order) { showSuccessfulPurchase(order) },
-              function(order) { showFailurefulPurchase(order) })"
-
-              class="btn btn-xs btn-outline btn-primary">Купить
-          </a>
-
           </li>
           <li class="groups__block groups__block_position-block-2">
             <img
@@ -225,7 +214,9 @@
           <p class="contact__block_text-block text-block">
             г.Кумертау, ул.Горького, д.11 <br>
             тел. +7(905) 357-18-55 <br>
-            karakulinaanna@ya.ru
+            karakulinaanna@ya.ru <br>
+            ИП Каракулина А.В. <br>
+            ИНН 02623536222
           </p>
 
            <a
@@ -327,10 +318,19 @@
             src="<%=require('./image/chiplenok.jpg')%>"
             alt=""
           />
-          <div class="popup__text-block" text-block>
+          <div class="popup__text-block text-block">
             <h3 class="popup__title popup__property-title"></h3>
             <p class="popup__text text-block"></p>
+            <a onclick="ipayCheckout({
+              currency:'RUB',
+              order_number:'',
+              description: 'Н. В. Гоголь. Вечера на хуторе близ Диканьки'},
+              function(order) { showSuccessfulPurchase(order) },
+              function(order) { showFailurefulPurchase(order) })"
+              class="button-pay">Оплатить
+            </a>
           </div>
+
         </div>
       </div>
     </template>

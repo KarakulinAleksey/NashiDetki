@@ -2,6 +2,7 @@ const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
+const CopyPlugin = require("copy-webpack-plugin");
 
 module.exports = {
   entry: { main: './src/pages/index.js' },
@@ -50,6 +51,11 @@ module.exports = {
   plugins: [
     new HtmlWebpackPlugin({
       template: './src/index.html' // путь к файлу index.html
+    }),
+    new CopyPlugin({
+      patterns: [
+        { from: "./src/static", to: "" },
+      ],
     }),
     new CleanWebpackPlugin(),
     new MiniCssExtractPlugin(),

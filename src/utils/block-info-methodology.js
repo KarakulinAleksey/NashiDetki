@@ -1,7 +1,7 @@
 export const blockInfoMethodology = [
   {
     methodologyImage: "",
-    methodologyTitle: "Методика Зайцева",
+    methodologyTitle: "Составь слово",
     methodologyText:
       "Методика Зайцева Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illum \
       laudantium beatae eius dolorem possimus sunt reiciendis, adipisci \

@@ -22,8 +22,10 @@ import {
   aboutBlockImage,
   aboutBlockText,
   popupTemplate,
+  PopupSostavSlovoTemplate,
 } from "../utils/var.js";
 import Popup from "../components/Popup.js";
+import PopupSostavSlovo from "../components/PopupSostavSlovo.js";
 
 //Добавляю Названия и текст к карточкам на главную страницу
 groupsBlockTitle.forEach((item, i) => {
@@ -52,6 +54,10 @@ aboutBlockText.textContent = blockInfoAbout[0].aboutText;
 
 //класс попап
 const popupElement = new Popup(popupTemplate);
+
+//класс попап PopupSostavSlovo
+const popupSostavSlovo = new PopupSostavSlovo(PopupSostavSlovoTemplate);
+
 //устанавливаю слушатели на карточки
 groupsBlocks.forEach((item) => {
   item.addEventListener("click", () => {
@@ -68,10 +74,10 @@ groupsBlocks.forEach((item) => {
 methodologyBlocks.forEach((item) => {
   item.addEventListener("click", () => {
     page.append(
-      popupElement.generatePopup(
-        item.querySelector(".methodology__block_image"),
+      popupSostavSlovo.generatePopup(
+        // item.querySelector(".methodology__block_image"),
         item.querySelector(".methodology__block_title"),
-        item.querySelector(".methodology__block_text")
+        // item.querySelector(".methodology__block_text")
       )
     );
   });

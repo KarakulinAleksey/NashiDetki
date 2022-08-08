@@ -1,0 +1,16 @@
+.popup-test-sostavslovo__button-check{
+  width: 120px;
+  height: 50px;
+  margin-top: 20px;
+  margin-right: 2%;
+  border: 1px solid #000;
+  background-color: #e5af0d;
+  border-radius: 4px;
+  align-self: flex-end;
+  transition: transform .2s linear .1s;
+}
+
+.popup-test-sostavslovo__button-check:hover{
+  transform: scale(1.02);
+  cursor: pointer;
+}

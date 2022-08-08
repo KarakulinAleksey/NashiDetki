@@ -1,0 +1,10 @@
+.popup-test-sostavslovo__image{
+  width: 100%;
+  align-self: center;
+  transition: transform .2s linear .1s;
+}
+
+.popup-test-sostavslovo__image:hover{
+  transform: scale(1.02);
+  cursor: pointer;
+}

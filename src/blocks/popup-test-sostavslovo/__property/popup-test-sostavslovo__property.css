@@ -1,0 +1,12 @@
+.popup-test-sostavslovo__property{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  justify-items: center;
+}
+
+/* @media screen and (max-width: 768px) {
+  .popup__property{
+    flex-direction: column;
+    padding: 10%;
+  }
+} */

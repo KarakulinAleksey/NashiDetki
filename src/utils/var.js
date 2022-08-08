@@ -27,4 +27,5 @@ export const aboutBlockImage = aboutBlock.querySelector('.about__block_image');
 export const aboutBlockText = aboutBlock.querySelector('.about__block_text-block');
 
 export const popupTemplate = page.querySelector('#popup');
+export const PopupSostavSlovoTemplate = page.querySelector('#popup-test-sostavSlovo');
 

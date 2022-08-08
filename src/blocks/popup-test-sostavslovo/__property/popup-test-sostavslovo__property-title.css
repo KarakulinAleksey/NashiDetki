@@ -1,0 +1,10 @@
+.popup-test-sostavslovo__property-title{
+  margin-top: 0;
+}
+
+@media screen and (max-width: 1024px) {
+  .popup-test-sostavslovo__property-title{
+    margin-top: 5%;
+    margin-bottom: 5%;
+  }
+}

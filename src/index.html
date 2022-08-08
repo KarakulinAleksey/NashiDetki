@@ -134,7 +134,7 @@
 
       <section class="methodology">
         <h2 class="methodology__title title-section">
-          Методики которые я использую
+          Интересные задания
         </h2>
         <ul class="methodology__list">
           <li class="methodology__block methodology__block_position-block-1">
@@ -143,7 +143,7 @@
               src="<%=require('./image/chiplenok.jpg')%>"
               alt=""
             />
-            <h3 class="methodology__block_title">Методика Зайцева</h3>
+            <h3 class="methodology__block_title">Составь слово</h3>
             <p class="methodology__block_text text-block"></p>
           </li>
           <li class="methodology__block methodology__block_position-block-2">
@@ -238,6 +238,7 @@
           src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A7d4de631fdf4e174191ba2931ef6c8edb154f1f59b2a36e4b30fee7df556c090&amp;width=500px&amp;height=400px&amp;lang=ru_RU&amp;scroll=true"
         ></script> -->
       <!-- </div> -->
+
         </div>
       </section>
     </main>
@@ -335,7 +336,101 @@
       </div>
     </template>
 
+    <template id="popup-test-sostavSlovo">
+      <div class="popup-test-sostavslovo popup-test-sostavslovo__show">
+        <div class="popup-test-sostavslovo__container">
+          <button
+          type="button"
+          class="popup-test-sostavslovo__button-exit"
+          aria-label="кнопка закрытия popup-test-sostavslovo"
+        ></button>
+          <div class="popup-test-sostavslovo__block-select">
+            <h3 class="popup-test-sostavslovo__title"></h3>
+            <select name="slovo">
+              <optgroup label="Уровень 1"></optgroup>
+               <option value="закуска">Закуска </option>
+               <option value="раки">Раки</option>
+               <option value="биточки">Биточки</option>
+              <optgroup label="Уровень 1"></optgroup>
+               <option value="r1">Закуска </option>
+               <option value="r2">Раки</option>
+               <option value="r3">Биточки</option>
+             </select>
+          </div>
+         <div class="popup-test-sostavslovo__block-image">
+            <img
+            class="popup-test-sostavslovo__image"
+            src="<%=require('./image/chiplenok.jpg')%>"
+            alt=""
+          />
+            <img
+            class="popup-test-sostavslovo__image"
+            src="<%=require('./image/chiplenok.jpg')%>"
+            alt=""
+          />
+          <img
+            class="popup-test-sostavslovo__image"
+            src="<%=require('./image/chiplenok.jpg')%>"
+            alt=""
+          />
+            <img
+            class="popup-test-sostavslovo__image"
+            src="<%=require('./image/chiplenok.jpg')%>"
+            alt=""
+          />
+            <img
+            class="popup-test-sostavslovo__image"
+            src="<%=require('./image/chiplenok.jpg')%>"
+            alt=""
+          />
+            <img
+            class="popup-test-sostavslovo__image"
+            src="<%=require('./image/chiplenok.jpg')%>"
+            alt=""
+          />
+            <img
+            class="popup-test-sostavslovo__image"
+            src="<%=require('./image/chiplenok.jpg')%>"
+            alt=""
+          />
+            <img
+            class="popup-test-sostavslovo__image"
+            src="<%=require('./image/chiplenok.jpg')%>"
+            alt=""
+          />
+            <img
+            class="popup-test-sostavslovo__image"
+            src="<%=require('./image/chiplenok.jpg')%>"
+            alt=""
+          />
+            <img
+            class="popup-test-sostavslovo__image"
+            src="<%=require('./image/chiplenok.jpg')%>"
+            alt=""
+          />
+            <img
+            class="popup-test-sostavslovo__image"
+            src="<%=require('./image/chiplenok.jpg')%>"
+            alt=""
+          />
+            <img
+            class="popup-test-sostavslovo__image"
+            src="<%=require('./image/chiplenok.jpg')%>"
+            alt=""
+          />
+         </div>
+         <div class="popup-test-sostavslovo__block-check">
+          <p class="popup-test-sostavslovo__slovo-check">Ваше слово: закуска</p>
+          <button
+          type="button"
+          class="popup-test-sostavslovo__button-check"
+          aria-label="кнопка проверки задания"
+        >Проверить</button>
+         </div>
 
+        </div>
+      </div>
+    </template>
 
     <!-- <a
       href="https://yandex.ru/maps/?um=constructor%3A7d4de631fdf4e174191ba2931ef6c8edb154f1f59b2a36e4b30fee7df556c090&amp;source=constructorStatic"

@@ -346,19 +346,21 @@
         ></button>
           <div class="popup-test-sostavslovo__block-select">
             <h3 class="popup-test-sostavslovo__title"></h3>
-            <select name="slovo">
+            <select name="slovo" class="popup-test-sostavslovo__select">
               <optgroup label="Уровень 1"></optgroup>
-               <option value="закуска">Закуска </option>
-               <option value="раки">Раки</option>
-               <option value="биточки">Биточки</option>
-              <optgroup label="Уровень 1"></optgroup>
-               <option value="r1">Закуска </option>
-               <option value="r2">Раки</option>
-               <option value="r3">Биточки</option>
+               <option value="лупа">лупа</option>
+               <option value="коты">коты</option>
+               <option value="зима">зима</option>
+               <option value="ваза">ваза</option>
+              <optgroup label="Уровень 2"></optgroup>
+               <option value="сорока">сорока</option>
+               <option value="родина">родина</option>
+               <option value="берёза">берёза</option>
+               <option value="дерево">дерево</option>
              </select>
           </div>
          <div class="popup-test-sostavslovo__block-image">
-            <img
+            <!-- <img
             class="popup-test-sostavslovo__image"
             src="<%=require('./image/chiplenok.jpg')%>"
             alt=""
@@ -417,10 +419,10 @@
             class="popup-test-sostavslovo__image"
             src="<%=require('./image/chiplenok.jpg')%>"
             alt=""
-          />
+          /> -->
          </div>
          <div class="popup-test-sostavslovo__block-check">
-          <p class="popup-test-sostavslovo__slovo-check">Ваше слово: закуска</p>
+          <p class="popup-test-sostavslovo__slovo-check"></p>
           <button
           type="button"
           class="popup-test-sostavslovo__button-check"

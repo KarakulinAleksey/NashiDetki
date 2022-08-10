@@ -1,5 +1,11 @@
 .popup-test-sostavslovo__block-image{
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  justify-items: center;
+  /* grid-template-columns: repeat(4, 1fr); */
+  /* justify-items: center; */
+  grid-template-columns: repeat(4, 24%);
+  grid-gap: 2%;
+  justify-content: center;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
 }

@@ -9,8 +9,8 @@
   background-size: 100% 100%;
   background-position: center;
   position: absolute;
-  left: 100%;
-  top: -4%;
+  left: 101%;
+  top: -7%;
 }
 
 .popup-test-sostavslovo__button-exit:hover {
@@ -19,8 +19,8 @@
 
 @media screen and (max-width: 1024px) {
   .popup-test-sostavslovo__button-exit {
-    left: 100%;
-    top: -15%;
+    /* left: 100%; */
+    /* top: -15%; */
   }
 }
 
@@ -28,7 +28,9 @@
   .popup-test-sostavslovo__button-exit {
     width: 20px;
     height: 20px;
-    left: 100%;
-    top: -5%;
+    /* left: 100%;
+    top: -5%; */
   }
 }
+
+

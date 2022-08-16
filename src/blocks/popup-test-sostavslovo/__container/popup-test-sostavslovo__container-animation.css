@@ -1,0 +1,16 @@
+.popup-test-sostavslovo__container-animation{
+  animation: position 0.3s 4 backwards ;
+
+}
+
+@keyframes position {
+  0% {
+    left:10px;
+  }
+  50% {
+    left:-10px;
+  }
+  100% {
+    left:10px;
+  }
+}

@@ -28,11 +28,11 @@ import Popup from "../components/Popup.js";
 import PopupSostavSlovo from "../components/PopupSostavSlovo.js";
 import {sloge} from "../utils/sloge.js";
 
-function img(imageAdres){
-  let img = document.createElement('img');
-  img.src = imageAdres;
-  return img;
-}
+// function img(imageAdres){
+//   let img = document.createElement('img');
+//   img.src = imageAdres;
+//   return img;
+// }
 
 // for (let key in sloge){
 //   console.log(key);
@@ -70,7 +70,7 @@ aboutBlockText.textContent = blockInfoAbout[0].aboutText;
 const popupElement = new Popup(popupTemplate);
 
 //класс попап PopupSostavSlovo
-const popupSostavSlovo = new PopupSostavSlovo(PopupSostavSlovoTemplate, sloge);
+// const popupSostavSlovo = new PopupSostavSlovo(PopupSostavSlovoTemplate, sloge);
 
 //устанавливаю слушатели на карточки
 groupsBlocks.forEach((item) => {
@@ -87,6 +87,7 @@ groupsBlocks.forEach((item) => {
 
 methodologyBlocks.forEach((item) => {
   item.addEventListener("click", () => {
+    const popupSostavSlovo = new PopupSostavSlovo(PopupSostavSlovoTemplate, sloge);
     page.append(
       popupSostavSlovo.generatePopup(
         // item.querySelector(".methodology__block_image"),

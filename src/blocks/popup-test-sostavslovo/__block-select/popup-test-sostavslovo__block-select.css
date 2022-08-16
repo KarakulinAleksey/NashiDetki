@@ -1,4 +1,7 @@
-.popup-test-sostavslovo__block-select{
+.popup-test-sostavslovo__block-select {
   display: flex;
-  margin-bottom: 20px;
+  margin: 0;
+  margin-bottom: 3%;
+  grid-row: 1/2;
+  grid-column: 1/2;
 }

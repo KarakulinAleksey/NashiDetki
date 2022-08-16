@@ -1,4 +1,8 @@
 .popup-test-sostavslovo__block-check{
   display: flex;
   justify-content: space-between;
+  margin-top: 20px;
+  grid-row: 3/4;
+  grid-column: 1/2;
+  margin-top: 6%;
 }

@@ -1,4 +1,4 @@
-.popup-test-sostavslovo__block-image{
+.popup-test-sostavslovo__block-image {
   display: grid;
   /* grid-template-columns: repeat(4, 1fr); */
   /* justify-items: center; */
@@ -8,4 +8,6 @@
   list-style-type: none;
   margin: 0;
   padding: 0;
+  grid-row: 2/3;
+  grid-column: 1/2;
 }

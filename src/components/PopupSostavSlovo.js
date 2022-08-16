@@ -1,8 +1,14 @@
+import gifConfetti from "../image/confetti.gif";
+
 export default class PopupSostavSlovo {
   constructor(popupTemplate, adressImageObject) {
     this._popupTemplate = popupTemplate;
     this._adressImageObject = adressImageObject;
     this._popupElement = this._getTemplatePopup();
+    this._popupContainer = this._popupElement.querySelector(
+      ".popup-test-sostavslovo__container"
+    );
+    // this._popupKonfetti = this._popupElement.querySelector(".gif-konfetti");
     this._popupButtonExit = this._popupElement.querySelector(
       ".popup-test-sostavslovo__button-exit"
     );
@@ -24,10 +30,13 @@ export default class PopupSostavSlovo {
     this._popupButtonCheck = this._popupElement.querySelector(
       ".popup-test-sostavslovo__button-check"
     );
-
     this._popupSlovoCheck = this._popupElement.querySelector(
       ".popup-test-sostavslovo__slovo-check"
     );
+    this._popupStatusCheck = this._popupElement.querySelector(
+      ".popup-test-sostavslovo__status-check"
+    );
+
     this._slovo = "";
     this._lypa = [
       "лу",
@@ -212,12 +221,13 @@ export default class PopupSostavSlovo {
     return divImageBlock;
   }
 
-  _setElementImage(imageAdress, nameImage) {
+  _setElementImage(imageAdress, nameImage, className) {
     let img = document.createElement("img");
-    img.className = "popup-test-sostavslovo__image";
+    // img.className = "popup-test-sostavslovo__image";
+    img.className = className;
     img.src = imageAdress;
     img.alt = `карточка со слогом ${nameImage}`;
-    img.id = nameImage;
+    img.id = nameImage || "";
     return img;
   }
 
@@ -245,7 +255,11 @@ export default class PopupSostavSlovo {
         key === checkWord[11]
       ) {
         this._popupBlockImages.prepend(
-          elementImage(adressImageObject[key], key)
+          elementImage(
+            adressImageObject[key],
+            key,
+            "popup-test-sostavslovo__image"
+          )
         );
         const img = this._popupElement.querySelector(
           ".popup-test-sostavslovo__image"
@@ -261,14 +275,14 @@ export default class PopupSostavSlovo {
   }
 
   _removeSlog(slog) {
-    this._slovo = this._slovo.replace(slog, '');
+    this._slovo = this._slovo.replace(slog, "");
   }
 
   _setEventListenerImage(elementImage) {
     elementImage.addEventListener("click", (evt) => {
       const evtTarget = evt.target;
-      evtTarget.classList.toggle('opacity-low');
-      if (elementImage.classList.contains('opacity-low')){
+      evtTarget.classList.toggle("opacity-low");
+      if (elementImage.classList.contains("opacity-low")) {
         this._addSlog(evtTarget.id);
       } else {
         this._removeSlog(evtTarget.id);
@@ -279,6 +293,7 @@ export default class PopupSostavSlovo {
 
   _setEventListenerButtonExit() {
     this._popupButtonExit.addEventListener("click", () => {
+      this._slovo = "";
       const popupDel = this._popupButtonExit.closest(".popup-test-sostavslovo");
       popupDel.remove();
     });
@@ -289,7 +304,7 @@ export default class PopupSostavSlovo {
       this._popupBlockImages = this._popupElement.querySelector(
         ".popup-test-sostavslovo__block-image"
       );
-      this._slovo = '';
+      this._slovo = "";
       this._popupSlovoCheck.innerHTML = `Ваше слово: ${this._slovo}`;
       console.log(this._popupSelect.value);
       if (this._popupSelect.value === "лупа") {
@@ -392,23 +407,47 @@ export default class PopupSostavSlovo {
     });
   }
 
+  _renderImageKonfetti() {
+    this._popupContainer.append(
+      this._setElementImage(gifConfetti, "", "gif-konfetti")
+    );
+  }
+
   _setEventListenerButtonCheck() {
     this._popupButtonCheck.addEventListener("click", () => {
       this._images = this._popupElement.querySelectorAll(
         ".popup-test-sostavslovo__image"
       );
-      this._images.forEach(element => {
-        element.classList.remove('opacity-low');
+
+      this._images.forEach((element) => {
+        element.classList.remove("opacity-low");
       });
       let valSelect = this._popupSelect.value;
       console.log(valSelect);
-      this._popupSlovoCheck.innerHTML = `Ваше слово: ${this._slovo}`;
+      this._popupSlovoCheck.innerHTML = `Твоё слово: ${this._slovo}`;
       if (valSelect === this._slovo) {
         console.log("Ответ правильный!");
-        this._slovo = '';
+        this._popupStatusCheck.innerHTML = 'Ответ правильный!';
+        this._renderImageKonfetti();
+        this._popupKonfetti =
+          this._popupContainer.querySelector(".gif-konfetti");
+        setTimeout(() => {
+          this._popupKonfetti.remove();
+        }, 3000);
+        this._slovo = "";
       } else {
         console.log("Ваш ответ не правильный!");
-        this._slovo = '';
+        this._popupStatusCheck.innerHTML = 'Ответ не правильный!';
+        this._popupContainer.classList.add(
+          "popup-test-sostavslovo__container-animation"
+        );
+        setTimeout(() => {
+          this._popupContainer.classList.remove(
+            "popup-test-sostavslovo__container-animation"
+          );
+        }, 1500);
+
+        this._slovo = "";
       }
     });
   }

@@ -1,0 +1,10 @@
+.popup-test-sostavslovo__status-check{
+  margin: 5px 0 0 0;
+}
+
+@media screen and (max-width: 380px) {
+  .popup-test-sostavslovo__status-check{
+    font-size: 12px;
+  }
+
+}

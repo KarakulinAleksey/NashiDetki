@@ -101,13 +101,19 @@
 @import url('../blocks/popup-test-sostavslovo/__property/popup-test-sostavslovo__property-image.css');
 @import url('../blocks/popup-test-sostavslovo/__property/popup-test-sostavslovo__property-title.css');
 @import url('../blocks/popup-test-sostavslovo/__property/popup-test-sostavslovo__property.css');
-@import url('../blocks/popup-test-sostavslovo/__show/popup-test-sostavslovo__show.css');
 @import url('../blocks/popup-test-sostavslovo/__text/popup-test-sostavslovo__text.css');
 @import url('../blocks/popup-test-sostavslovo/__title/popup-test-sostavslovo__titile.css');
 @import url('../blocks/popup-test-sostavslovo/__button-check/popup-test-sostavslovo__button-check.css');
 @import url('../blocks/popup-test-sostavslovo/__block-check/popup-test-sostavslovo__block-check.css');
 @import url('../blocks/popup-test-sostavslovo/__slovo-check/popup-test-sostavslovo__slovo-check.css');
+@import url('../blocks/popup-test-sostavslovo/__show/popup-test-sostavslovo__show.css');
+@import url('../blocks/popup-test-sostavslovo/__container/popup-test-sostavslovo__container-animation.css');
+@import url('../blocks/popup-test-sostavslovo/__status-check/popup-test-sostavslovo__status-check.css');
 
 @import url('../blocks/button-pay/button-pay.css');
 @import url('../blocks/opacity-low/opacity-low.css');
+@import url('../blocks/gif-konfetti/gif-konfetti.css');
+
+@import url('../blocks/popup-test-sostavslovo/__show/popup-test-sostavslovo__show.css');
+/* @import url('../blocks/block-confetti/block-confetti.css'); */
 

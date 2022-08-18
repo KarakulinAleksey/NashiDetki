@@ -28,19 +28,6 @@ import Popup from "../components/Popup.js";
 import PopupSostavSlovo from "../components/PopupSostavSlovo.js";
 import {sloge} from "../utils/sloge.js";
 
-// function img(imageAdres){
-//   let img = document.createElement('img');
-//   img.src = imageAdres;
-//   return img;
-// }
-
-// for (let key in sloge){
-//   console.log(key);
-//   if ((key === "ба") || (key === "ха") || (key === "па")){
-//     page.append(img(sloge[key]));
-//   }
-// }
-
 //Добавляю Названия и текст к карточкам на главную страницу
 groupsBlockTitle.forEach((item, i) => {
   item.textContent = blockInfoGroups[i].groupTitle;
@@ -77,7 +64,7 @@ groupsBlocks.forEach((item) => {
   item.addEventListener("click", () => {
     page.append(
       popupElement.generatePopup(
-        item.querySelector(".groups__block_image"),
+        // item.querySelector(".groups__block_image"),
         item.querySelector(".groups__block_title"),
         item.querySelector(".groups__block_text")
       )

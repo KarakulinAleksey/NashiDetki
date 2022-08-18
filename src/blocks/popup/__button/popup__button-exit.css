@@ -10,7 +10,7 @@
   background-position: center;
   position: absolute;
   left: 100%;
-  top: -15%;
+  top: -5%;
 }
 
 .popup__button-exit:hover {
@@ -20,7 +20,7 @@
 @media screen and (max-width: 1024px) {
   .popup__button-exit {
     left: 100%;
-    top: -15%;
+    top: -5%;
   }
 }
 

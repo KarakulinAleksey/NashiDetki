@@ -1,11 +1,11 @@
 .popup__property{
-  flex-direction: row;
-  padding: 3%;
+  /* flex-direction: row; */
+  /* padding: 3%; */
 }
 
 @media screen and (max-width: 768px) {
   .popup__property{
-    flex-direction: column;
-    padding: 10%;
+    /* flex-direction: column; */
+    /* padding: 3%; */
   }
 }

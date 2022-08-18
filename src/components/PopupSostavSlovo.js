@@ -306,6 +306,7 @@ export default class PopupSostavSlovo {
       );
       this._slovo = "";
       this._popupSlovoCheck.innerHTML = `Ваше слово: ${this._slovo}`;
+      this._popupStatusCheck.innerHTML = '';
       console.log(this._popupSelect.value);
       if (this._popupSelect.value === "лупа") {
         this._popupBlockImages.remove();

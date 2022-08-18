@@ -3,5 +3,6 @@
   margin: 0;
   text-align: justify;
   overflow: auto;
-  height: 205px;
+  height: 95%;
+  white-space: pre-line;
 }

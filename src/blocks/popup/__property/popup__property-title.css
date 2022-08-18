@@ -1,10 +1,10 @@
 .popup__property-title{
-  margin-top: 0;
+  /* margin-top: 0; */
 }
 
 @media screen and (max-width: 1024px) {
   .popup__property-title{
-    margin-top: 5%;
-    margin-bottom: 5%;
+    /* margin-top: 5%; */
+    /* margin-bottom: 5%; */
   }
 }

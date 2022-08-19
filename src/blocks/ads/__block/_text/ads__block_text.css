@@ -1,0 +1,19 @@
+.ads__block_text {
+  margin: 0;
+  text-align: justify;
+
+  height: 200px;
+
+  overflow: hidden;
+
+
+  display: -webkit-box;
+  -webkit-line-clamp: 8;
+  -webkit-box-orient: vertical;
+}
+
+@media screen and (max-width: 1024px) {
+  .ads__block_text-block {
+    margin: 5% 0 0;
+  }
+}

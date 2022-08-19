@@ -1,0 +1,12 @@
+.ads {
+  margin-top: 20px;
+  width: 90%;
+}
+
+@media screen and (max-width: 760px) {
+  .ads {
+    /* grid-template-columns: 1fr;
+    padding-left: 30px;
+    padding-right: 30px; */
+  }
+}

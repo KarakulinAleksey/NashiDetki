@@ -1,10 +1,16 @@
 import "./index.css";
+
+import { blockInfoAds } from "../utils/block-info-ads.js";
 import { blockInfoGroups } from "../utils/block-info-groups.js";
 import { blockInfoMethodology } from "../utils/block-info-methodology.js";
 import { blockInfoAboutProject } from "../utils/block-info-about-project.js";
 import { blockInfoAbout } from "../utils/block-info-about.js";
 import {
   page,
+  adsBlocks,
+  adsBlockImage,
+  adsBlockTitle,
+  adsBlockText,
   groupsBlocks,
   groupsBlockImage,
   groupsBlockTitle,
@@ -17,10 +23,10 @@ import {
   aboutProjectTitle,
   aboutProjectImage,
   aboutProjectText,
-  aboutBlock,
-  aboutTitle,
-  aboutBlockImage,
-  aboutBlockText,
+  // aboutBlock,
+  // aboutTitle,
+  // aboutBlockImage,
+  // aboutBlockText,
   popupTemplate,
   PopupSostavSlovoTemplate,
 } from "../utils/var.js";
@@ -29,6 +35,19 @@ import PopupSostavSlovo from "../components/PopupSostavSlovo.js";
 import {sloge} from "../utils/sloge.js";
 
 //Добавляю Названия и текст к карточкам на главную страницу
+
+adsBlockImage.forEach((item, i) => {
+  item.src = blockInfoAds[i].adsImage;
+});
+
+adsBlockText.forEach((item, i) => {
+  item.textContent = blockInfoAds[i].adsText;
+});
+
+adsBlockTitle.forEach((item, i) => {
+  item.textContent = blockInfoAds[i].adsTitle;
+});
+
 groupsBlockTitle.forEach((item, i) => {
   item.textContent = blockInfoGroups[i].groupTitle;
 });
@@ -51,17 +70,26 @@ aboutProjectText.textContent = blockInfoAboutProject[0].aboutProjectText;
 
 // aboutTitle.textContent = blockInfoAbout[0].aboutTitle;
 
-aboutBlockImage.src = blockInfoAbout[0].aboutImage;
+// aboutBlockImage.src = blockInfoAbout[0].aboutImage;
 
-aboutBlockText.textContent = blockInfoAbout[0].aboutText;
+// aboutBlockText.textContent = blockInfoAbout[0].aboutText;
 
 //класс попап
 const popupElement = new Popup(popupTemplate);
 
-//класс попап PopupSostavSlovo
-// const popupSostavSlovo = new PopupSostavSlovo(PopupSostavSlovoTemplate, sloge);
-
 //устанавливаю слушатели на карточки
+
+adsBlocks.forEach((item) => {
+  item.addEventListener("click", () => {
+    page.append(
+      popupElement.generatePopup(
+        item.querySelector(".ads__block_title"),
+        item.querySelector(".ads__block_text")
+      )
+    );
+  });
+});
+
 groupsBlocks.forEach((item) => {
   item.addEventListener("click", () => {
     page.append(
@@ -97,8 +125,8 @@ aboutProjectBlock.addEventListener("click", () => {
   );
 });
 
-aboutBlock.addEventListener("click", () => {
-  page.append(
-    popupElement.generatePopup(aboutBlockImage, aboutTitle, aboutBlockText)
-  );
-});
+// aboutBlock.addEventListener("click", () => {
+//   page.append(
+//     popupElement.generatePopup(aboutBlockImage, aboutTitle, aboutBlockText)
+//   );
+// });

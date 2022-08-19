@@ -28,7 +28,8 @@ export default class Popup{
   // generatePopup(itemImage, itemTitle, itemText){
     generatePopup(itemTitle, itemText){
   //  this._popupImage.src = itemImage.src;
-   this._popupTitle.textContent = `Группа  "${itemTitle.textContent}".`;
+  //  this._popupTitle.textContent = `Группа  "${itemTitle.textContent}".`;
+   this._popupTitle.textContent = itemTitle.textContent;
    this._popupText.textContent = itemText.textContent;
    this._getTemplatePopup();
    this._setEventListenerButtonExit();

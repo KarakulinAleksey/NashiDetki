@@ -5,12 +5,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <script src="https://3dsec.sberbank.ru/payment/docsite/assets/js/ipay.js"></script>
+    <!-- <script src="https://3dsec.sberbank.ru/payment/docsite/assets/js/ipay.js"></script>
    <script>
      var ipay = new IPAY({api_token: 'YRF3C5RFICWISEWFR6GJ'});
-   </script>
+   </script> -->
 
     <!-- <link rel="stylesheet" href="./pages/index.css" /> -->
+
     <title>Наши детки</title>
     <link rel="icon" href= "<%=require('./image/book-opened.svg')%>" />
     <meta name="description" content="Студия раннего развития Наши Детки" />
@@ -60,16 +61,32 @@
 
     <main class="content">
 
-      <section id="about" class="about">
-        <h2 class="about__title title-section">Объявления</h2>
-        <div class="about__block">
-          <img
-            class="about__block_image"
-            src="<%=require('./image/about.jpg')%>"
-            alt="фото автора"
+      <section id="ads" class="ads">
+        <h2 class="ads__title title-section">Объявления</h2>
+        <ul class="ads__list">
+          <li class="ads__block">
+            <img
+            class="ads__block_image"
+            src=""
+            alt="информация"
           />
-          <p class="about__block_text-block text-block"></p>
-        </div>
+          <div class="ads__block_text-block" >
+            <h3 class="ads__block_title">Объявление1</h3>
+            <p class="ads__block_text text-block"></p>
+          </div>
+          </li>
+          <li class="ads__block">
+            <img
+            class="ads__block_image"
+            src=""
+            alt="информация"
+          />
+          <div class="ads__block_text-block" >
+            <h3 class="ads__block_title">Объявление1</h3>
+            <p class="ads__block_text text-block"></p>
+          </div>
+          </li>
+        </ul>
       </section>
 
       <section id="group" class="groups">
@@ -110,7 +127,7 @@
               src="<%=require('./image/дошкольник.jpg')%>"
               alt=""
             />
-            <div class="groups__block_text-block" text-block>
+            <div class="groups__block_text-block" >
               <h3 class="groups__block_title groups__block_property-title">
                 Дошкольник
               </h3>
@@ -210,6 +227,18 @@
           />
         </div>
       </section>
+
+      <!-- <section id="about" class="about">
+        <h2 class="about__title title-section">Обо мне</h2>
+        <div class="about__block">
+          <img
+            class="about__block_image"
+            src="<%=require('./image/about.jpg')%>"
+            alt="фото автора"
+          />
+          <p class="about__block_text-block text-block"></p>
+        </div>
+      </section> -->
 
       <section id="contact" class="contact">
         <h2 class="contact__title title-section">Контактная информация</h2>

@@ -28,36 +28,51 @@
         src="<%=require('./image/baner.jpg')%>"
         alt="банер"
       />
-      <ul class="header__menu">
-        <li class="header__menu-item">
-          <a class="header__menu-link" href="#"> Главная </a>
-        </li>
-        <!-- <li class="header__menu-item">
-          <a class="header__menu-link" href="#"> Оплатить </a>
-        </li> -->
-        <li class="header__menu-item">
-          <a class="header__menu-link" href="#"> Объявления </a>
-        </li>
-        <li class="header__menu-item">
-          <a class="header__menu-link" href="#"> Контакты </a>
-        </li>
-        <!-- <li class="header__menu-item">
-          <a class="header__menu-link" href="#"> Обо мне </a>
-        </li> -->
-        <li class="header__menu-item">
-          <a class="header__menu-link" href="#"> Курс "Чтение" </a>
-        </li>
-        <!-- <li class="header__menu-item">
-          <a class="header__menu-link" href="#"> Регистрация </a>
-        </li> -->
-        <!-- <li class="header__menu-item">
-          <a class="header__menu-link" href="#"> Войти </a>
-        </li> -->
-      </ul>
+
     </header>
 
+    <ul class="header__menu">
+      <li class="header__menu-item">
+        <a class="header__menu-link" href="#about"> Объявления </a>
+      </li>
+      <!-- <li class="header__menu-item">
+        <a class="header__menu-link" href="#"> Оплатить </a>
+      </li> -->
+      <li class="header__menu-item">
+        <a class="header__menu-link" href="#group"> Группы </a>
+      </li>
+      <li class="header__menu-item">
+        <a class="header__menu-link" href="#methodology"> Интересные задания </a>
+      </li>
+      <li class="header__menu-item">
+        <a class="header__menu-link" href="#about-project"> О студии </a>
+      </li>
+      <li class="header__menu-item">
+        <a class="header__menu-link" href="#contact"> Контакты </a>
+      </li>
+      <!-- <li class="header__menu-item">
+        <a class="header__menu-link" href="#"> Регистрация </a>
+      </li> -->
+      <!-- <li class="header__menu-item">
+        <a class="header__menu-link" href="#"> Войти </a>
+      </li> -->
+    </ul>
+
     <main class="content">
-      <section class="groups">
+
+      <section id="about" class="about">
+        <h2 class="about__title title-section">Объявления</h2>
+        <div class="about__block">
+          <img
+            class="about__block_image"
+            src="<%=require('./image/about.jpg')%>"
+            alt="фото автора"
+          />
+          <p class="about__block_text-block text-block"></p>
+        </div>
+      </section>
+
+      <section id="group" class="groups">
         <h2 class="groups__title title-section">Группы</h2>
         <ul class="groups__list">
           <li class="groups__block groups__block_position-block-1">
@@ -132,7 +147,7 @@
         </ul>
       </section>
 
-      <section class="methodology">
+      <section id="methodology" class="methodology">
         <h2 class="methodology__title title-section">
           Интересные задания
         </h2>
@@ -184,7 +199,7 @@
         </ul>
       </section>
 
-      <section class="about-project">
+      <section id='about-project' class="about-project">
         <h2 class="about-project__title title-section">О студии</h2>
         <div class="about-project__block">
           <p class="about-project__block_text-block text-block"></p>
@@ -196,19 +211,7 @@
         </div>
       </section>
 
-      <section class="about">
-        <h2 class="about__title title-section">Немного обо мне</h2>
-        <div class="about__block">
-          <img
-            class="about__block_image"
-            src="<%=require('./image/about.jpg')%>"
-            alt="фото автора"
-          />
-          <p class="about__block_text-block text-block"></p>
-        </div>
-      </section>
-
-      <section class="contact">
+      <section id="contact" class="contact">
         <h2 class="contact__title title-section">Контактная информация</h2>
         <div class="contact__block">
           <p class="contact__block_text-block text-block">
@@ -257,19 +260,19 @@
       </p>
       <ul class="footer__menu">
         <li class="footer__menu-item">
-          <a class="footer__menu-link" href="#"> Главная </a>
+          <a class="footer__menu-link" href="#about"> Объявления </a>
         </li>
         <li class="footer__menu-item">
-          <a class="footer__menu-link" href="#"> Группы </a>
+          <a class="footer__menu-link" href="#group"> Группы </a>
         </li>
         <li class="footer__menu-item">
-          <a class="footer__menu-link" href="#"> Общение </a>
+          <a class="footer__menu-link" href="#methodology"> Интересные задания </a>
         </li>
         <li class="footer__menu-item">
-          <a class="footer__menu-link" href="#"> Контакты </a>
+          <a class="footer__menu-link" href="#about-project"> О студии </a>
         </li>
         <li class="footer__menu-item">
-          <a class="footer__menu-link" href="#"> Курс "Чтение" </a>
+          <a class="footer__menu-link" href="#contact"> Контакты </a>
         </li>
       </ul>
       <ul class="footer__links">

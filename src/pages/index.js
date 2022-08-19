@@ -49,7 +49,9 @@ aboutProjectTitle.textContent = blockInfoAboutProject[0].aboutProjectTitle;
 
 aboutProjectText.textContent = blockInfoAboutProject[0].aboutProjectText;
 
-aboutTitle.textContent = blockInfoAbout[0].aboutTitle;
+// aboutTitle.textContent = blockInfoAbout[0].aboutTitle;
+
+aboutBlockImage.src = blockInfoAbout[0].aboutImage;
 
 aboutBlockText.textContent = blockInfoAbout[0].aboutText;
 

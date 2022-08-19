@@ -3,7 +3,7 @@
 .page{background-color:#fff;box-sizing:border-box;color:#000;display:grid;font-family:Inter,Arial,Helvetica,sans-serif;grid-template-columns:100%;justify-items:center;margin:0 auto;max-width:1280px;min-width:320px}
 .header{align-items:center;box-sizing:border-box;display:flex;flex-direction:column;justify-content:space-between;width:95%}
 .header__logo{height:48px;width:48px}.header__logo:hover{opacity:.6}
-.header__menu{box-sizing:border-box;display:flex;flex-wrap:wrap;justify-content:space-evenly;list-style-type:none;padding:0;width:100%}
+.header__menu{background-color:#ffffffc7;box-sizing:border-box;display:flex;flex-wrap:wrap;justify-content:space-evenly;list-style-type:none;padding:0;position:-webkit-sticky;position:sticky;top:20px;width:95%}
 .header__menu-item{font-size:16px;font-style:normal;font-weight:400;line-height:17px;margin-left:20px;opacity:.6;padding-bottom:1px}.header__menu-item:hover{border-bottom:1px solid #000;opacity:1;padding-bottom:0}@media screen and (max-width:700px){.header__menu-item{margin-top:10px}}
 .header__menu-link{color:#000;text-decoration:none}
 .header__image{width:100%}
@@ -49,7 +49,7 @@
 .about{margin-top:20px;width:90%}
 .about__block{border:1px solid #e3e3e3;border-radius:2%;box-shadow:4px 4px 10px #ffc10740;box-sizing:border-box;display:flex;flex-direction:row;margin:0 auto;padding:5%;transition:transform .2s linear .1s;width:95%}.about__block:hover{cursor:pointer;transform:scale(1.02)}@media screen and (max-width:1024px){.about__block{flex-direction:column}}
 .about__block_text-block{margin:0;text-align:justify}@media screen and (max-width:1024px){.about__block_text-block{margin:5% 0 0}}
-.about__block_image{align-self:center;margin-right:5%;width:45%}@media screen and (max-width:1024px){.about__block_image{margin:0;width:60%}}
+.about__block_image{align-self:center;margin-right:5%;width:15%}@media screen and (max-width:1024px){.about__block_image{margin:0;width:35%}}
 .about__title{border-top:1px solid #ffc10775;margin:30px 0 0;padding-top:20px;text-align:left;text-shadow:2px 2px 2px #e3e3e3;width:100%}
 .contact{margin-top:20px;width:90%}
 .contact__block{border:1px solid #e3e3e3;border-radius:2%;box-shadow:4px 4px 10px #9c27b040;box-sizing:border-box;display:flex;flex-direction:row;justify-content:space-between;margin:0 auto;padding:5%;transition:transform .2s linear .1s;width:95%}.contact__block:hover{cursor:pointer;transform:scale(1.02)}@media screen and (max-width:1024px){.contact__block{align-items:center;flex-direction:column-reverse}}

@@ -72,6 +72,7 @@
 @import url('../blocks/contact/__block/_text-block/contact__block_text-block.css');
 @import url('../blocks/contact/__block/_image/contact__block_image.css');
 @import url('../blocks/contact/__title.css/contact__title.css');
+@import url('../blocks/contact/__block/_links/contact__block_links.css');
 
 @import url('../blocks/footer/__author/footer__author.css');
 @import url('../blocks/footer/__image/footer__image.css');

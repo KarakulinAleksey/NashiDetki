@@ -14,7 +14,7 @@
 
 .contact__block:hover {
   transform: scale(1.02);
-  cursor: pointer;
+  /* cursor: pointer; */
 }
 
 @media screen and (max-width: 1024px){

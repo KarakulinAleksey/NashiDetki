@@ -1,11 +1,11 @@
 .footer__links-vk {
   width: 30px;
   height: 30px;
-  background-image: url('../../../image/vk.svg');
+  background-image: url('../../../image/vk-svgrepo-com.svg');
   background-repeat: no-repeat;
   background-size: cover;
   margin-bottom: 10px;
-  opacity: 0.8;
+  opacity: 0.6;
 }
 
 .footer__links-vk:hover{

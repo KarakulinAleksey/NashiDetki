@@ -102,11 +102,18 @@ groupsBlocks.forEach((item) => {
   });
 });
 
-methodologyBlocks.forEach((item) => {
+methodologyBlocks.forEach((item, i) => {
   item.addEventListener("click", () => {
-    const popupSostavSlovo = new PopupSostavSlovo(PopupSostavSlovoTemplate, sloge);
+    const zadanie = [
+      new PopupSostavSlovo(PopupSostavSlovoTemplate, sloge),
+      new PopupSostavSlovo(PopupSostavSlovoTemplate, sloge),
+      new PopupSostavSlovo(PopupSostavSlovoTemplate, sloge),
+      new PopupSostavSlovo(PopupSostavSlovoTemplate, sloge),
+    ];
+    // const popupSostavSlovo = new PopupSostavSlovo(PopupSostavSlovoTemplate, sloge);
     page.append(
-      popupSostavSlovo.generatePopup(
+      // popupSostavSlovo.generatePopup(
+        zadanie[i].generatePopup(
         // item.querySelector(".methodology__block_image"),
         item.querySelector(".methodology__block_title"),
         // item.querySelector(".methodology__block_text")

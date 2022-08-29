@@ -1,9 +1,35 @@
 export const blockInfoMethodology = [
   {
     methodologyImage: "",
+    methodologyTitle: "Какая буква спряталась?",
+    methodologyText:
+      "Какая буква спряталась? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illum \
+      laudantium beatae eius dolorem possimus sunt reiciendis, adipisci \
+      ex earum. Accusantium est dolore accusamus vero exercitationem \
+      nostrum veniam praesentium nam consequuntur. \
+      Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illum \
+      laudantium beatae eius dolorem possimus sunt reiciendis, adipisci \
+      ex earum. Accusantium est dolore accusamus vero exercitationem \
+      nostrum veniam praesentium nam consequuntur."
+  },
+  {
+    methodologyImage: "",
+    methodologyTitle: "Найди слог",
+    methodologyText:
+      "Найди слог Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illum \
+      laudantium beatae eius dolorem possimus sunt reiciendis, adipisci \
+      ex earum. Accusantium est dolore accusamus vero exercitationem \
+      nostrum veniam praesentium nam consequuntur. \
+      Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illum \
+      laudantium beatae eius dolorem possimus sunt reiciendis, adipisci \
+      ex earum. Accusantium est dolore accusamus vero exercitationem \
+      nostrum veniam praesentium nam consequuntur."
+  },
+  {
+    methodologyImage: "",
     methodologyTitle: "Составь слово",
     methodologyText:
-      "Методика Зайцева Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illum \
+      "Составь слово Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illum \
       laudantium beatae eius dolorem possimus sunt reiciendis, adipisci \
       ex earum. Accusantium est dolore accusamus vero exercitationem \
       nostrum veniam praesentium nam consequuntur. \
@@ -14,35 +40,9 @@ export const blockInfoMethodology = [
   },
   {
     methodologyImage: "",
-    methodologyTitle: "Методика Железновой",
+    methodologyTitle: "Составь предложение",
     methodologyText:
-      "Методика Железновой Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illum \
-      laudantium beatae eius dolorem possimus sunt reiciendis, adipisci \
-      ex earum. Accusantium est dolore accusamus vero exercitationem \
-      nostrum veniam praesentium nam consequuntur. \
-      Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illum \
-      laudantium beatae eius dolorem possimus sunt reiciendis, adipisci \
-      ex earum. Accusantium est dolore accusamus vero exercitationem \
-      nostrum veniam praesentium nam consequuntur."
-  },
-  {
-    methodologyImage: "",
-    methodologyTitle: "Методика Монтессори",
-    methodologyText:
-      "Методика Монтессори Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illum \
-      laudantium beatae eius dolorem possimus sunt reiciendis, adipisci \
-      ex earum. Accusantium est dolore accusamus vero exercitationem \
-      nostrum veniam praesentium nam consequuntur. \
-      Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illum \
-      laudantium beatae eius dolorem possimus sunt reiciendis, adipisci \
-      ex earum. Accusantium est dolore accusamus vero exercitationem \
-      nostrum veniam praesentium nam consequuntur."
-  },
-  {
-    methodologyImage: "",
-    methodologyTitle: "Методика Домана",
-    methodologyText:
-      "Методика Домана Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illum \
+      "Составь предложение Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illum \
       laudantium beatae eius dolorem possimus sunt reiciendis, adipisci \
       ex earum. Accusantium est dolore accusamus vero exercitationem \
       nostrum veniam praesentium nam consequuntur. \

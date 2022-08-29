@@ -63,7 +63,7 @@
 .contact__block_text-block{margin:0;text-align:justify}@media screen and (max-width:1024px){.contact__block_text-block{margin:5% 0 0}}
 .contact__block_image{width:60%}@media screen and (max-width:1024px){.contact__block_image{margin:0;width:90%}}
 .contact__title{border-top:1px solid #9c27b075;margin:30px 0 0;padding-top:20px;text-align:left;text-shadow:2px 2px 2px #e3e3e3;width:100%}
-.contact__block_links{color:#000;text-decoration:none}.contact__block_links:hover{-webkit-text-decoration:revert;text-decoration:revert}
+.contact__block_links{color:#000;opacity:.6;text-decoration:none}.contact__block_links:hover{opacity:1;-webkit-text-decoration:revert;text-decoration:revert}
 .footer__author{color:#afafaf;font-size:10px;grid-column-end:2;grid-column-start:1;justify-self:center;margin:0 0 20px}@media screen and (max-width:680px){.footer__author{grid-column:1/3;grid-row:2/3;margin:0}}
 .footer__image{width:100%}@media screen and (max-width:680px){.footer__image{grid-column:1/3;grid-row:1/2}}
 .footer__links-vk{background-image:url(2fd70b1e0ee41eb59114.svg);background-repeat:no-repeat;background-size:cover;height:30px;margin-bottom:10px;opacity:.6;width:30px}.footer__links-vk:hover{opacity:1}

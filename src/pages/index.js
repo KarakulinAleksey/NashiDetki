@@ -31,6 +31,7 @@ import {
   PopupSostavSlovoTemplate,
 } from "../utils/var.js";
 import Popup from "../components/Popup.js";
+import PopupNaideSlog from "../components/PopupNaideSlog.js";
 import PopupSostavSlovo from "../components/PopupSostavSlovo.js";
 import {sloge} from "../utils/sloge.js";
 
@@ -106,7 +107,7 @@ methodologyBlocks.forEach((item, i) => {
   item.addEventListener("click", () => {
     const zadanie = [
       new PopupSostavSlovo(PopupSostavSlovoTemplate, sloge),
-      new PopupSostavSlovo(PopupSostavSlovoTemplate, sloge),
+      new PopupNaideSlog(PopupSostavSlovoTemplate, sloge),
       new PopupSostavSlovo(PopupSostavSlovoTemplate, sloge),
       new PopupSostavSlovo(PopupSostavSlovoTemplate, sloge),
     ];

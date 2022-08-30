@@ -46,6 +46,8 @@ import ts from '../image/litters/все/ц.jpg';
 import ch from '../image/litters/все/ч.jpg';
 import sh from '../image/litters/все/ш.jpg';
 import shch from '../image/litters/все/щ.jpg';
+import eo from '../image/litters/все/ы.jpg';
+import uo from '../image/litters/все/э.jpg';
 import yu from '../image/litters/все/ю.jpg';
 import ya from '../image/litters/все/я.jpg';
 
@@ -220,6 +222,17 @@ import tya from '../image/litters/я/тя.jpg';
 import fya from '../image/litters/я/фя.jpg';
 import hya from '../image/litters/я/хя.jpg';
 
+import parta from '../image/litters/часть букв/а.jpg';
+import parte from '../image/litters/часть букв/е.jpg';
+import parteo from '../image/litters/часть букв/ё.jpg';
+import parti from '../image/litters/часть букв/и.jpg';
+import parto from '../image/litters/часть букв/о.jpg';
+import partu from '../image/litters/часть букв/у.jpg';
+import party from '../image/litters/часть букв/ы.jpg';
+import partye from '../image/litters/часть букв/э.jpg';
+import partyu from '../image/litters/часть букв/ю.jpg';
+import partya from '../image/litters/часть букв/я.jpg';
+
 export const sloge = {
   "ба": ba,
   "ва": va,
@@ -269,6 +282,8 @@ export const sloge = {
   "ч": ch,
   "ш": sh,
   "щ": shch,
+  "ы": uo,
+  "э": eo,
   "ю": yu,
   "я": ya,
 
@@ -440,4 +455,15 @@ export const sloge = {
   "тя": tya,
   "фя": fya,
   "хя": hya,
+
+  "А": parta,
+  "Е": parte,
+  "Ё": parteo,
+  "И": parti,
+  "О": parto,
+  "У": partu,
+  "Ы": party,
+  "Э": partye,
+  "Ю": partyu,
+  "Я": partya,
 }

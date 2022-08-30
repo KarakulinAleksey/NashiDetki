@@ -2,3 +2,10 @@
   margin: 0 20px 0 2%;
 
 }
+
+
+@media screen and (max-width: 425px) {
+  .popup-test-sostavslovo__title{
+    font-size: small;
+  }
+}

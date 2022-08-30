@@ -116,7 +116,7 @@ methodologyBlocks.forEach((item, i) => {
       // popupSostavSlovo.generatePopup(
         zadanie[i].generatePopup(
         // item.querySelector(".methodology__block_image"),
-        item.querySelector(".methodology__block_title"),
+        // item.querySelector(".methodology__block_title"),
         // item.querySelector(".methodology__block_text")
       )
     );

@@ -15,9 +15,9 @@ export default class PopupSostavSlovo {
     this._popupSelectBlock = this._popupElement.querySelector(
       ".popup-test-sostavslovo__block-select"
     );
-    this._popupSelect = this._popupElement.querySelector(
-      ".popup-test-sostavslovo__select"
-    );
+    // this._popupSelect = this._popupElement.querySelector(
+    //   ".popup-test-sostavslovo__select"
+    // );
     // this._popupBlockImages = this._popupElement.querySelector(
     //   ".popup-test-sostavslovo__block-image"
     // );
@@ -38,6 +38,22 @@ export default class PopupSostavSlovo {
     );
 
     this._slovo = "";
+
+    this._optionSelect = [
+      'лупа',
+      'коты',
+      'зима',
+      'ваза',
+      'сорока',
+      'родина',
+      'берёза',
+      'дерево',
+      'рыбалка',
+      'молоток',
+      'трактор',
+      'пирожок',
+    ]
+
     this._lypa = [
       "лу",
       "па",
@@ -215,6 +231,42 @@ export default class PopupSostavSlovo {
     return popup;
   }
 
+  _setElementSelect(){
+    let select = document.createElement("select");
+    select.name = "slovo";
+    select.className = "popup-test-sostavslovo__select";
+    return select;
+  }
+
+  // _setElementOptgroup(){
+  //   let optgroup = document.createElement("optgroup");
+  //   optgroup.label = "Уровень ";
+  //   return optgroup;
+  // }
+
+  _setElementOption(optionValue, optionInnerHTML){
+    let option = document.createElement("option");
+    option.value = optionValue;
+    option.innerHTML = optionInnerHTML;
+    return option;
+  }
+
+  _renderElementSelect(){
+    this._popupTitle.after(this._setElementSelect());
+  }
+
+  _renderElementOptgroup(){
+
+  }
+
+  _renderElementOption(){
+    this._elementSelect = this._popupElement.querySelector('.popup-test-sostavslovo__select');
+    // this._elementSelect.append(this._setElementOptgroup());
+    this._optionSelect.forEach((item)=>{
+      this._elementSelect.append(this._setElementOption(item, item));
+    })
+  }
+
   _setElementImageBlock() {
     let divImageBlock = document.createElement("div");
     divImageBlock.className = "popup-test-sostavslovo__block-image";
@@ -287,7 +339,7 @@ export default class PopupSostavSlovo {
       } else {
         this._removeSlog(evtTarget.id);
       }
-      console.log(this._slovo);
+      // console.log(this._slovo);
     });
   }
 
@@ -300,6 +352,9 @@ export default class PopupSostavSlovo {
   }
 
   _setEventListenerSelect() {
+    this._popupSelect = this._popupElement.querySelector(
+      ".popup-test-sostavslovo__select"
+    );
     this._popupSelect.addEventListener("change", () => {
       this._popupBlockImages = this._popupElement.querySelector(
         ".popup-test-sostavslovo__block-image"
@@ -307,7 +362,7 @@ export default class PopupSostavSlovo {
       this._slovo = "";
       this._popupSlovoCheck.innerHTML = `Ваше слово: ${this._slovo}`;
       this._popupStatusCheck.innerHTML = '';
-      console.log(this._popupSelect.value);
+      // console.log(this._popupSelect.value);
       if (this._popupSelect.value === "лупа") {
         this._popupBlockImages.remove();
         this._renderElementImageBlock();
@@ -424,10 +479,10 @@ export default class PopupSostavSlovo {
         element.classList.remove("opacity-low");
       });
       let valSelect = this._popupSelect.value;
-      console.log(valSelect);
+      // console.log(valSelect);
       this._popupSlovoCheck.innerHTML = `Твоё слово: ${this._slovo}`;
       if (valSelect === this._slovo) {
-        console.log("Ответ правильный!");
+        // console.log("Ответ правильный!");
         this._popupStatusCheck.innerHTML = 'Ответ правильный!';
         this._renderImageKonfetti();
         this._popupKonfetti =
@@ -437,7 +492,7 @@ export default class PopupSostavSlovo {
         }, 3000);
         this._slovo = "";
       } else {
-        console.log("Ваш ответ не правильный!");
+        // console.log("Ваш ответ не правильный!");
         this._popupStatusCheck.innerHTML = 'Ответ не правильный!';
         this._popupContainer.classList.add(
           "popup-test-sostavslovo__container-animation"
@@ -453,18 +508,21 @@ export default class PopupSostavSlovo {
     });
   }
 
-  generatePopup(itemTitle) {
-    this._popupTitle.textContent = itemTitle.textContent;
+  generatePopup() {
+    this._popupTitle.textContent = "Составь слово";
     this._getTemplatePopup();
-    this._setEventListenerButtonExit();
-    this._setEventListenerSelect();
-    this._setEventListenerButtonCheck();
+    this._renderElementSelect();
+    // this._renderElementOptgroup();
+    this._renderElementOption();
     this._renderElementImageBlock();
     this._renderElementImage(
       this._setElementImage,
       this._adressImageObject,
       this._lypa
     );
+    this._setEventListenerButtonExit();
+    this._setEventListenerSelect();
+    this._setEventListenerButtonCheck();
     return this._popupElement;
   }
 }

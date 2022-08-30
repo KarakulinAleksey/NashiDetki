@@ -197,11 +197,11 @@ export default class PopupNaideSlog {
     return select;
   }
 
-  _setElementOptgroup(){
-    let optgroup = document.createElement("optgroup");
-    optgroup.label = "Уровень ";
-    return optgroup;
-  }
+  // _setElementOptgroup(){
+  //   let optgroup = document.createElement("optgroup");
+  //   optgroup.label = "Уровень ";
+  //   return optgroup;
+  // }
 
   _setElementOption(optionValue, optionInnerHTML){
     let option = document.createElement("option");
@@ -215,16 +215,15 @@ export default class PopupNaideSlog {
   }
 
   _renderElementOptgroup(){
+
+  }
+
+  _renderElementOption(){
     this._elementSelect = this._popupElement.querySelector('.popup-test-sostavslovo__select');
     // this._elementSelect.append(this._setElementOptgroup());
     this._optionSelect.forEach((item)=>{
       this._elementSelect.append(this._setElementOption(item, item));
     })
-
-  }
-
-  _renderElementOption(){
-
   }
 
   _setElementImage(imageAdress, nameImage, className) {
@@ -293,7 +292,7 @@ export default class PopupNaideSlog {
       } else {
         this._removeSlog(evtTarget.id);
       }
-      console.log(this._slovo);
+      // console.log(this._slovo);
     });
   }
 
@@ -399,36 +398,56 @@ export default class PopupNaideSlog {
     );
   }
 
+  _arrFilterSlog(arrSlog, valSelect){
+    // console.log('arrSlog', arrSlog);
+    const arrFilterSlog = arrSlog.filter((item)=>{
+      return item.includes(valSelect.toLowerCase());
+  })
+    return arrFilterSlog;
+  }
+
+  _arrFilterSelect(valSelect){
+    switch (valSelect){
+      case 'А':
+        return this._arrFilterSlog(this._a, valSelect);
+      case 'О':
+        return this._arrFilterSlog(this._o, valSelect);
+      case 'У':
+        return this._arrFilterSlog(this._u, valSelect);
+      case 'Ы':
+        return this._arrFilterSlog(this._y, valSelect);
+      case 'Я':
+        return this._arrFilterSlog(this._ya, valSelect);
+      case 'Ю':
+        return this._arrFilterSlog(this._yu, valSelect);
+      case 'И':
+        return this._arrFilterSlog(this._i, valSelect);
+      case 'Е':
+        return this._arrFilterSlog(this._e, valSelect);
+      case 'Ё':
+        return this._arrFilterSlog(this._eya, valSelect);
+    }
+  }
+
   _setEventListenerButtonCheck() {
     this._popupButtonCheck.addEventListener("click", () => {
       this._images = this._popupElement.querySelectorAll(
         ".popup-test-sostavslovo__image"
       );
-      let flag = 0;
 
       this._images.forEach((element) => {
         element.classList.remove("opacity-low");
       });
+
       let valSelect = this._popupSelect.value;
-      console.log('valSelect', valSelect);
+      // console.log('valSelect', valSelect);
       this._popupSlovoCheck.innerHTML = `Твои слоги: ${this._slovo}`;
       let arrSlovo = this._slovo.slice(0, -1).split(' ');
-      console.log('arrSlovo', arrSlovo);
+      // console.log('arrSlovo', this._arrFilterSlog(arrSlovo, valSelect));
+      // console.log('arrSelect', this._arrFilterSelect(valSelect));
 
-      //написать функцию для фильтрации слогов
-      const arrSlog = arrSlovo.filter((item)=>{
-          return item.includes(valSelect.toLowerCase());
-      });
-
-      const arrSlogSelect = this._a.filter((item)=>{
-          return item.includes(valSelect.toLowerCase());
-      })
-
-      console.log('arrSlog.length', arrSlog);
-      console.log('arrSlogSelect.length', arrSlogSelect);
-
-      if (arrSlog.length === arrSlogSelect.length) {
-        console.log("Ответ правильный!");
+      if ((this._arrFilterSlog(arrSlovo, valSelect).length === this._arrFilterSelect(valSelect).length) && (arrSlovo.length <= this._arrFilterSelect(valSelect).length)) {
+        // console.log("Ответ правильный!");
         this._popupStatusCheck.innerHTML = 'Ответ правильный!';
         this._renderImageKonfetti();
         this._popupKonfetti =
@@ -438,7 +457,7 @@ export default class PopupNaideSlog {
         }, 3000);
         this._slovo = "";
       } else {
-        console.log("Ваш ответ не правильный!");
+        // console.log("Ваш ответ не правильный!");
         this._popupStatusCheck.innerHTML = 'Ответ не правильный!';
         this._popupContainer.classList.add(
           "popup-test-sostavslovo__container-animation"
@@ -454,12 +473,13 @@ export default class PopupNaideSlog {
     });
   }
 
-  generatePopup(itemTitle) {
-    this._popupTitle.textContent = itemTitle.textContent;
+  generatePopup() {
+    this._popupTitle.textContent = 'Найди все слоги с буквой';
     this._getTemplatePopup();
 
     this._renderElementSelect();
-    this._renderElementOptgroup();
+    // this._renderElementOptgroup();
+    this._renderElementOption();
     this._renderElementImageBlock();
     this._renderElementImage(
       this._setElementImage,

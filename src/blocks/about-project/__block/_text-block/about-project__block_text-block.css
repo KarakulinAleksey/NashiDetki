@@ -1,11 +1,15 @@
-.about-project__block_text-block{
+.about-project__block_text-block {
+  -webkit-line-clamp: 16;
+  -webkit-box-orient: vertical;
+  display: -webkit-box;
+  height: 405px;
   margin: 0;
+  overflow: hidden;
   text-align: justify;
-
 }
 
 @media screen and (max-width: 1024px) {
-  .about-project__block_text-block{
+  .about-project__block_text-block {
     margin: 5% 0 0;
   }
 }

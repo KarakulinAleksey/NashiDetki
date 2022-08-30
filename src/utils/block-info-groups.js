@@ -234,14 +234,23 @@ export const blockInfoGroups = [
     groupImage: "",
     groupTitle: "Лепка из глины",
     groupText:
-      "Вместе с тётейLorem ipsum dolor sit, amet consectetur adipisicing elit. Illum \
-      laudantium beatae eius dolorem possimus sunt reiciendis, adipisci \
-      ex earum. Accusantium est dolore accusamus vero exercitationem \
-      nostrum veniam praesentium nam consequuntur. \
-      Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illum \
-      laudantium beatae eius dolorem possimus sunt reiciendis, adipisci \
-      ex earum. Accusantium est dolore accusamus vero exercitationem \
-      nostrum veniam praesentium nam consequuntur.",
+    `Занятия  в «Глиняной мастерской» проводятся в формате мастер-классов.
+
+    Процесс создания поделок из глины имеет массу положительных сторон для развития ребёнка:
+    - Лепка развивает мелкую моторику рук и пальчиков;
+    - Расширяет пространственное мышление ребёнка, умение видеть и ощущать объём;
+    - Развивает творческое воображение, стимулирует фантазию;
+    - Способствует самовыражению ребёнка, позволяет ему продемонстрировать своё умение, а возможно, и проявить талант;
+    - Служит прекрасным поводом для тесного общения со взрослыми.
+
+    На мастер-классе можно сделать любую понравившуюся тарелочку или блюдо.
+    Так же можно предложить свою идею, мы подготовим эскиз специально по вашему желанию!
+    На ручную лепку к нам могут прийти все желающие - взрослые и дети от 5 лет! Дети 4 лет,
+    могут прийти в сопровождении взрослого, и делать одно изделие на двоих.
+
+    Готовое изделие можно забрать через 10 – 12 дней.
+    Предварительная запись обязательна.
+    Расписание МК можно узнать в группе ВК или по телефону.`,
   },
   {
     groupImage: "",

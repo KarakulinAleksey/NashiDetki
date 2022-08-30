@@ -126,7 +126,7 @@ methodologyBlocks.forEach((item, i) => {
 aboutProjectBlock.addEventListener("click", () => {
   page.append(
     popupElement.generatePopup(
-      aboutProjectImage,
+      // aboutProjectImage,
       aboutProjectTitle,
       aboutProjectText
     )

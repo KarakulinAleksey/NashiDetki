@@ -67,6 +67,25 @@ export default class PopupNaideBukvu {
     return popup;
   }
 
+  _setElementPartImage(imageSrc){
+    let partImage = document.createElement("img");
+    partImage.src = imageSrc;
+    partImage.className = "popup-test-sostavslovo__part-image";
+    partImage.alt = "буква";
+    return partImage;
+  }
+
+  _generateRandomPartImage(){
+    let randomNumber = Math.floor(Math.random() * 10);
+    return this._partLetter[randomNumber];
+  }
+
+  _renderElementPartImage(adressImageObject){
+    let randomNumber = this._generateRandomPartImage();
+    // this._popupSelectBlock.after(this._setElementPartImage(adressImageObject));
+    this._popupSelectBlock.after(this._setElementImage(adressImageObject[randomNumber], randomNumber, "popup-test-sostavslovo__part-image"));
+  }
+
   _setElementImageBlock() {
     let divImageBlock = document.createElement("div");
     divImageBlock.className = "popup-test-sostavslovo__block-image";
@@ -123,11 +142,13 @@ export default class PopupNaideBukvu {
   }
 
   _addSlog(slog) {
-    this._slovo = this._slovo + slog;
+    this._slovo = slog;
+    console.log(this._slovo);
   }
 
   _removeSlog(slog) {
     this._slovo = this._slovo.replace(slog, "");
+    console.log(this._slovo);
   }
 
   _setEventListenerImage(elementImage) {
@@ -162,12 +183,12 @@ export default class PopupNaideBukvu {
       this._images = this._popupElement.querySelectorAll(
         ".popup-test-sostavslovo__image"
       );
-
+      this._partImage = document.querySelector(".popup-test-sostavslovo__part-image");
       this._images.forEach((element) => {
         element.classList.remove("opacity-low");
       });
-      let valSelect = this._popupSelect.value;
-      // console.log(valSelect);
+      let valSelect = this._partImage.id.toLowerCase();
+      console.log('valSelect', valSelect);
       this._popupSlovoCheck.innerHTML = `Твоё слово: ${this._slovo}`;
       if (valSelect === this._slovo) {
         // console.log("Ответ правильный!");
@@ -200,6 +221,7 @@ export default class PopupNaideBukvu {
     this._popupTitle.textContent = "Какая буква спряталась?";
     this._getTemplatePopup();
     this._renderElementImageBlock();
+    this._renderElementPartImage(this._adressImageObject);
     this._renderElementImage(
       this._setElementImage,
       this._adressImageObject,

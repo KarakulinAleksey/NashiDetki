@@ -280,7 +280,7 @@ export default class PopupNaideSlog {
   }
 
   _removeSlog(slog) {
-    this._slovo = this._slovo.replace(slog, "");
+    this._slovo = this._slovo.replace(slog + " ", "");
   }
 
   _setEventListenerImage(elementImage) {
@@ -315,7 +315,7 @@ export default class PopupNaideSlog {
       this._slovo = "";
       this._popupSlovoCheck.innerHTML = `Твои слоги: ${this._slovo}`;
       this._popupStatusCheck.innerHTML = '';
-      console.log(this._popupSelect.value);
+      // console.log(this._popupSelect.value);
       if (this._popupSelect.value === "А") {
         this._popupBlockImages.remove();
         this._renderElementImageBlock();
@@ -445,6 +445,7 @@ export default class PopupNaideSlog {
       let arrSlovo = this._slovo.slice(0, -1).split(' ');
       // console.log('arrSlovo', this._arrFilterSlog(arrSlovo, valSelect));
       // console.log('arrSelect', this._arrFilterSelect(valSelect));
+      // console.log(arrSlovo.length <= this._arrFilterSelect(valSelect).length);
 
       if ((this._arrFilterSlog(arrSlovo, valSelect).length === this._arrFilterSelect(valSelect).length) && (arrSlovo.length <= this._arrFilterSelect(valSelect).length)) {
         // console.log("Ответ правильный!");

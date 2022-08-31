@@ -81,9 +81,19 @@ export default class PopupNaideBukvu {
   }
 
   _renderElementPartImage(adressImageObject){
-    let randomNumber = this._generateRandomPartImage();
-    // this._popupSelectBlock.after(this._setElementPartImage(adressImageObject));
-    this._popupSelectBlock.after(this._setElementImage(adressImageObject[randomNumber], randomNumber, "popup-test-sostavslovo__part-image"));
+    const partImage = this._popupContainer.querySelector('.popup-test-sostavslovo__part-image');
+    if (partImage) {
+      // console.log('partImage', 'true');
+      let randomNumber = this._generateRandomPartImage();
+      // this._popupSelectBlock.after(this._setElementPartImage(adressImageObject));
+      this._partImage.replaceWith(this._setElementImage(adressImageObject[randomNumber], randomNumber, "popup-test-sostavslovo__part-image"));
+    } else {
+      // console.log("partImage", 'false');
+      let randomNumber = this._generateRandomPartImage();
+      // this._popupSelectBlock.after(this._setElementPartImage(adressImageObject));
+      this._popupSelectBlock.after(this._setElementImage(adressImageObject[randomNumber], randomNumber, "popup-test-sostavslovo__part-image"));
+    }
+
   }
 
   _setElementImageBlock() {
@@ -143,17 +153,23 @@ export default class PopupNaideBukvu {
 
   _addSlog(slog) {
     this._slovo = slog;
-    console.log(this._slovo);
+    // console.log(this._slovo);
   }
 
   _removeSlog(slog) {
     this._slovo = this._slovo.replace(slog, "");
-    console.log(this._slovo);
+    // console.log(this._slovo);
   }
 
   _setEventListenerImage(elementImage) {
     elementImage.addEventListener("click", (evt) => {
       const evtTarget = evt.target;
+      this._images = this._popupElement.querySelectorAll(
+        ".popup-test-sostavslovo__image"
+      );
+      this._images.forEach((element) => {
+        element.classList.remove("opacity-low");
+      });
       evtTarget.classList.toggle("opacity-low");
       if (elementImage.classList.contains("opacity-low")) {
         this._addSlog(evtTarget.id);
@@ -188,8 +204,8 @@ export default class PopupNaideBukvu {
         element.classList.remove("opacity-low");
       });
       let valSelect = this._partImage.id.toLowerCase();
-      console.log('valSelect', valSelect);
-      this._popupSlovoCheck.innerHTML = `Твоё слово: ${this._slovo}`;
+      // console.log('valSelect', valSelect);
+      this._popupSlovoCheck.innerHTML = `Твоя буква: ${this._slovo}`;
       if (valSelect === this._slovo) {
         // console.log("Ответ правильный!");
         this._popupStatusCheck.innerHTML = 'Ответ правильный!';
@@ -199,6 +215,7 @@ export default class PopupNaideBukvu {
         setTimeout(() => {
           this._popupKonfetti.remove();
         }, 3000);
+        this._renderElementPartImage(this._adressImageObject);
         this._slovo = "";
       } else {
         // console.log("Ваш ответ не правильный!");
@@ -217,6 +234,16 @@ export default class PopupNaideBukvu {
     });
   }
 
+  _editPositionElement(){
+    const blockCheck = this._popupContainer.querySelector('.popup-test-sostavslovo__block-check');
+    const blockImage = this._popupContainer.querySelector('.popup-test-sostavslovo__block-image');
+    const blockSelect = this._popupContainer.querySelector('.popup-test-sostavslovo__block-select');
+
+    blockCheck.style.gridRow = "4/5";
+    blockImage.style.gridRow = "3/4";
+
+  }
+
   generatePopup() {
     this._popupTitle.textContent = "Какая буква спряталась?";
     this._getTemplatePopup();
@@ -227,6 +254,7 @@ export default class PopupNaideBukvu {
       this._adressImageObject,
       this._letter
     );
+    this._editPositionElement();
     this._setEventListenerButtonExit();
     this._setEventListenerButtonCheck();
     return this._popupElement;

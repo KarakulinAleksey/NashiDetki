@@ -282,8 +282,8 @@ export const sloge = {
   "ч": ch,
   "ш": sh,
   "щ": shch,
-  "ы": uo,
-  "э": eo,
+  "ы": eo,
+  "э": uo,
   "ю": yu,
   "я": ya,
 

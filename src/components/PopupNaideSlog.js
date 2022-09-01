@@ -244,35 +244,51 @@ export default class PopupNaideSlog {
     this._popupBlockImages = this._popupElement.querySelector(
       ".popup-test-sostavslovo__block-image"
     );
-    for (let key in adressImageObject) {
-      if (
-        key === checkWord[0] ||
-        key === checkWord[1] ||
-        key === checkWord[2] ||
-        key === checkWord[3] ||
-        key === checkWord[4] ||
-        key === checkWord[5] ||
-        key === checkWord[6] ||
-        key === checkWord[7] ||
-        key === checkWord[8] ||
-        key === checkWord[9] ||
-        key === checkWord[10] ||
-        key === checkWord[11]
-      ) {
-        this._popupBlockImages.prepend(
-          elementImage(
-            adressImageObject[key],
-            key,
-            "popup-test-sostavslovo__image"
-          )
-        );
-        const img = this._popupElement.querySelector(
-          ".popup-test-sostavslovo__image"
-        );
-        // console.log(img);
-        this._setEventListenerImage(img);
-      }
-    }
+
+    // for (let key in adressImageObject) {
+    //   if (
+    //     key === checkWord[0] ||
+    //     key === checkWord[1] ||
+    //     key === checkWord[2] ||
+    //     key === checkWord[3] ||
+    //     key === checkWord[4] ||
+    //     key === checkWord[5] ||
+    //     key === checkWord[6] ||
+    //     key === checkWord[7] ||
+    //     key === checkWord[8] ||
+    //     key === checkWord[9] ||
+    //     key === checkWord[10] ||
+    //     key === checkWord[11]
+    //   ) {
+    //     this._popupBlockImages.prepend(
+    //       elementImage(
+    //         adressImageObject[key],
+    //         key,
+    //         "popup-test-sostavslovo__image"
+    //       )
+    //     );
+    //     const img = this._popupElement.querySelector(
+    //       ".popup-test-sostavslovo__image"
+    //     );
+    //     // console.log(img);
+    //     this._setEventListenerImage(img);
+    //   }
+    // }
+    const sortCheckWord = checkWord.sort(() => Math.random() - 0.5);
+    sortCheckWord.forEach((item)=>{
+      this._popupBlockImages.prepend(
+              elementImage(
+                adressImageObject[item],
+                item,
+                "popup-test-sostavslovo__image"
+              )
+            );
+            const img = this._popupElement.querySelector(
+              ".popup-test-sostavslovo__image"
+            );
+            // console.log(img);
+            this._setEventListenerImage(img);
+    })
   }
 
   _addSlog(slog) {

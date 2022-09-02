@@ -87,9 +87,6 @@
 @import url('../blocks/footer/__menu/footer__menu.css');
 @import url('../blocks/footer/footer.css');
 
-@import url('../blocks/title-section/title-section.css');
-@import url('../blocks/text-block/text-block.css');
-
 @import url('../blocks/popup/popup.css');
 @import url('../blocks/popup/__container/popup__container.css');
 @import url('../blocks/popup/__image/popup__image.css');
@@ -127,3 +124,6 @@
 @import url('../blocks/popup-test-sostavslovo/__show/popup-test-sostavslovo__show.css');
 /* @import url('../blocks/block-confetti/block-confetti.css'); */
 
+@import url('../blocks/title-section/title-section.css');
+@import url('../blocks/text-block/text-block.css');
+@import url('../blocks/font/font-size-14px.css');

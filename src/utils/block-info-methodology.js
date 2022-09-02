@@ -3,53 +3,35 @@ export const blockInfoMethodology = [
     methodologyImage: "",
     methodologyTitle: "Какая буква спряталась?",
     methodologyText:
-      "Какая буква спряталась? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illum \
-      laudantium beatae eius dolorem possimus sunt reiciendis, adipisci \
-      ex earum. Accusantium est dolore accusamus vero exercitationem \
-      nostrum veniam praesentium nam consequuntur. \
-      Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illum \
-      laudantium beatae eius dolorem possimus sunt reiciendis, adipisci \
-      ex earum. Accusantium est dolore accusamus vero exercitationem \
-      nostrum veniam praesentium nam consequuntur."
+    `В большом жёлтом квадрате пропала часть буквы.
+    Подумай, какая буква спряталась?
+    Выбери из предложенных вариантов один верный и нажми на него, далее нажми кнопку – Проверить.
+    Если ответ правильный, на экране появится салют и откроется новая буква.`
   },
   {
     methodologyImage: "",
     methodologyTitle: "Найди слог",
     methodologyText:
-      "Найди слог Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illum \
-      laudantium beatae eius dolorem possimus sunt reiciendis, adipisci \
-      ex earum. Accusantium est dolore accusamus vero exercitationem \
-      nostrum veniam praesentium nam consequuntur. \
-      Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illum \
-      laudantium beatae eius dolorem possimus sunt reiciendis, adipisci \
-      ex earum. Accusantium est dolore accusamus vero exercitationem \
-      nostrum veniam praesentium nam consequuntur."
+    `Найди все слоги с определённой гласной буквой, выдели их, нажми кнопку - Проверить.
+    Если ответ правильный, на экране появится салют.
+    Чтобы перейди на другой уровень, нажми на стрелочку возле буквы А, и выбери новую букву.`
   },
   {
     methodologyImage: "",
     methodologyTitle: "Составь слово",
     methodologyText:
-      "Составь слово Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illum \
-      laudantium beatae eius dolorem possimus sunt reiciendis, adipisci \
-      ex earum. Accusantium est dolore accusamus vero exercitationem \
-      nostrum veniam praesentium nam consequuntur. \
-      Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illum \
-      laudantium beatae eius dolorem possimus sunt reiciendis, adipisci \
-      ex earum. Accusantium est dolore accusamus vero exercitationem \
-      nostrum veniam praesentium nam consequuntur."
+    `Составь предложенное слово, выдели нужные слоги, нажми кнопку – Проверить.
+    Если ответ правильный, на экране появится салют.
+    Чтобы перейди на другой уровень, нажми на стрелочку возле слова, и выбери новое.`
   },
   {
     methodologyImage: "",
     methodologyTitle: "Составь предложение",
     methodologyText:
-      "Составь предложение Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illum \
-      laudantium beatae eius dolorem possimus sunt reiciendis, adipisci \
-      ex earum. Accusantium est dolore accusamus vero exercitationem \
-      nostrum veniam praesentium nam consequuntur. \
-      Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illum \
-      laudantium beatae eius dolorem possimus sunt reiciendis, adipisci \
-      ex earum. Accusantium est dolore accusamus vero exercitationem \
-      nostrum veniam praesentium nam consequuntur."
+    `Составь предложение, выдели нужные слоги, нажми кнопку – Проверить.
+    Не забывай, что между словами в предложении ставится интервал, используй для интервала пустой квадрат.
+    Если ответ правильный, на экране появится салют.
+    Чтобы перейди на другой уровень, нажми на стрелочку возле слова, и выбери новое предложение.`
   }
 
 ];

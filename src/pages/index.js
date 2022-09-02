@@ -34,6 +34,7 @@ import Popup from "../components/Popup.js";
 import PopupNaideSlog from "../components/PopupNaideSlog.js";
 import PopupSostavSlovo from "../components/PopupSostavSlovo.js";
 import PopupNaideBukvu from "../components/PopupNaideBukvu.js";
+import PopupSostavPredlogenie from "../components/PopupSostavPredlogenie.js";
 import {sloge} from "../utils/sloge.js";
 
 //Добавляю Названия и текст к карточкам на главную страницу
@@ -110,7 +111,7 @@ methodologyBlocks.forEach((item, i) => {
       new PopupNaideBukvu(PopupSostavSlovoTemplate, sloge),
       new PopupNaideSlog(PopupSostavSlovoTemplate, sloge),
       new PopupSostavSlovo(PopupSostavSlovoTemplate, sloge),
-      new PopupSostavSlovo(PopupSostavSlovoTemplate, sloge),
+      new PopupSostavPredlogenie(PopupSostavSlovoTemplate, sloge),
     ];
     // const popupSostavSlovo = new PopupSostavSlovo(PopupSostavSlovoTemplate, sloge);
     page.append(

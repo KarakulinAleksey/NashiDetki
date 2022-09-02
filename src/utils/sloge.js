@@ -50,6 +50,7 @@ import eo from '../image/litters/все/ы.jpg';
 import uo from '../image/litters/все/э.jpg';
 import yu from '../image/litters/все/ю.jpg';
 import ya from '../image/litters/все/я.jpg';
+import probel from '../image/litters/все/пробел.jpg'
 
 import be from '../image/litters/е/бе.jpg';
 import ve from '../image/litters/е/ве.jpg';
@@ -286,6 +287,7 @@ export const sloge = {
   "э": uo,
   "ю": yu,
   "я": ya,
+  " ": probel,
 
   "бе": be,
   "ве": ve,

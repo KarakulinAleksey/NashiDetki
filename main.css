@@ -12,7 +12,7 @@
 .ads__block{border:1px solid #e3e3e3;border-radius:2%;box-shadow:4px 4px 10px #ffc10740;box-sizing:border-box;display:flex;flex-direction:row;margin:0 auto;padding:3%;transition:transform .2s linear .1s;width:95%}.ads__block:hover{cursor:pointer;transform:scale(1.02)}@media screen and (max-width:1024px){.ads__block{flex-direction:column}}
 .ads__block_image{align-self:center;margin-right:5%;width:15%}@media screen and (max-width:1024px){.ads__block_image{margin:0;width:35%}}
 .ads__block_text{-webkit-line-clamp:8;-webkit-box-orient:vertical;display:-webkit-box;height:200px;margin:0;overflow:hidden;text-align:justify}@media screen and (max-width:1024px){.ads__block_text-block{margin:5% 0 0}}
-.ads__block_title{margin:0 0 18px}
+.ads__block_title{font-weight:500;margin:0 0 18px}
 .ads__list{display:grid;gap:15px 15px;margin:0 auto;padding:0;width:95%}
 .ads__title{border-top:1px solid #ffc10775;margin:30px 0 0;padding-top:20px;text-align:left;text-shadow:2px 2px 2px #e3e3e3;width:100%}
 .groups{width:90%}
@@ -100,7 +100,7 @@
 .popup-test-sostavslovo__title{margin:0 20px 0 2%}@media screen and (max-width:425px){.popup-test-sostavslovo__title{font-size:small}}
 .popup-test-sostavslovo__button-check{align-self:flex-end;background-color:#e5af0d;border:1px solid #000;border-radius:4px;height:50px;margin:0 2% 0 0;transition:transform .2s linear .1s;width:120px}.popup-test-sostavslovo__button-check:hover{cursor:pointer;transform:scale(1.02)}@media screen and (max-width:380px){.popup-test-sostavslovo__button-check{height:35px;width:98px}}
 .popup-test-sostavslovo__block-check{display:flex;grid-column:1/2;grid-row:3/4;justify-content:space-between;margin-top:6%}
-.popup-test-sostavslovo__slovo-check{margin:0}@media screen and (max-width:380px){.popup-test-sostavslovo__slovo-check{font-size:12px}}
+.popup-test-sostavslovo__slovo-check{margin:0}@media screen and (max-width:380px){.popup-test-sostavslovo__slovo-check{font-size:12px;max-width:120px}}
 .popup-test-sostavslovo__container-animation{-webkit-animation:position .3s 4 backwards;animation:position .3s 4 backwards}@-webkit-keyframes position{0%{left:10px}50%{left:-10px}to{left:10px}}@keyframes position{0%{left:10px}50%{left:-10px}to{left:10px}}
 .popup-test-sostavslovo__status-check{margin:5px 0 0}@media screen and (max-width:380px){.popup-test-sostavslovo__status-check{font-size:12px}}
 .button-pay{background-color:#98cf30;border:none;border-radius:4px;cursor:pointer;display:inline-block;padding:7px 12px;text-align:center;vertical-align:middle;white-space:nowrap;width:95%}

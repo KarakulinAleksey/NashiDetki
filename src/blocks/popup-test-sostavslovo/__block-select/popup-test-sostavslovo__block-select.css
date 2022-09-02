@@ -5,3 +5,9 @@
   grid-row: 1/2;
   grid-column: 1/2;
 }
+
+@media screen and (max-width: 360px) {
+  .popup-test-sostavslovo__block-select{
+    font-size: 14px
+  }
+}

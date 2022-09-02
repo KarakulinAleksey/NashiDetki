@@ -5,6 +5,7 @@
 @media screen and (max-width: 380px) {
   .popup-test-sostavslovo__slovo-check{
     font-size: 12px;
+    max-width: 120px;
   }
 
 }

@@ -1,0 +1,36 @@
+.popup-registration__input {
+  width: 100%;
+  padding: 5px 5px 5px 5px;
+  border: none;
+  border-bottom: 1px solid #e0e0e0;
+  background-color: transparent;
+  outline: none;
+  transition: 0.3s;
+}
+
+.popup-registration__input:focus {
+  border-bottom: 1px solid #1a73a8;
+}
+
+.popup-registration__input:focus ~.popup-registration__label {
+  transform: translateY(-20px) translateX(0px) scale(.8);
+}
+
+::placeholder{
+  color: transparent;
+}
+
+.popup-registration__input:not(:placeholder-shown) + .popup-registration__label {
+  transform: translateY(-20px)  translateX(0px) scale(.8);
+  color: #1a73a8;
+
+  z-index: 10;
+}
+
+.popup-registration__input:not(:placeholder-shown) {
+  border-bottom: 1px solid #1a73a8;
+}
+
+.popup-registration__input:-webkit-autofill {
+  transition: background-color 5000s ease-in-out 0s;
+}

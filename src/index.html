@@ -51,12 +51,12 @@
       <li class="header__menu-item">
         <a class="header__menu-link" href="#contact"> Контакты </a>
       </li>
-      <!-- <li class="header__menu-item">
-        <a class="header__menu-link" href="#"> Регистрация </a>
-      </li> -->
-      <!-- <li class="header__menu-item">
-        <a class="header__menu-link" href="#"> Войти </a>
-      </li> -->
+      <li class="header__menu-item">
+        <button class="header__menu-button-sugnup" href="#"> Регистрация </button>
+      </li>
+      <li class="header__menu-item">
+        <button class="header__menu-button-sugnin" href="#"> Войти </button>
+      </li>
     </ul>
 
     <main class="content">
@@ -387,23 +387,6 @@
         ></button>
           <div class="popup-test-sostavslovo__block-select">
             <h3 class="popup-test-sostavslovo__title"></h3>
-            <!-- <select name="slovo" class="popup-test-sostavslovo__select">
-              <optgroup label="Уровень 1"></optgroup>
-               <option value="лупа">лупа</option>
-               <option value="коты">коты</option>
-               <option value="зима">зима</option>
-               <option value="ваза">ваза</option>
-              <optgroup label="Уровень 2"></optgroup>
-               <option value="сорока">сорока</option>
-               <option value="родина">родина</option>
-               <option value="берёза">берёза</option>
-               <option value="дерево">дерево</option>
-              <optgroup label="Уровень 3"></optgroup>
-               <option value="рыбалка">рыбалка</option>
-               <option value="молоток">молоток</option>
-               <option value="трактор">трактор</option>
-               <option value="пирожок">пирожок</option>
-             </select> -->
           </div>
 
          <div class="popup-test-sostavslovo__block-check">
@@ -420,9 +403,44 @@
          </div>
        </div>
         </div>
-
-
     </template>
+
+   <div class="popup-registration">
+      <div class="popup-registration__container">
+        <img src="<%=require('./image/CloseIcon.svg')%>" class="popup-registration__close" alt="кнопка закрытия формы">
+        <h2 class="popup-registration__title">Регистрация</h2>
+        <div class="popup-registration__block-input">
+          <input
+          name="name"
+          type="text"
+          class="popup-registration__input popup-registration__input-name"
+          placeholder="name"
+          />
+          <label for="" class="popup-registration__label">Имя</label>
+        </div>
+      <div class="popup-registration__block-input">
+        <input
+        name="email"
+        type="text"
+        class="popup-registration__input popup-registration__input-email"
+        placeholder="email"
+        />
+        <label for="" class="popup-registration__label">Email</label>
+      </div>
+      <div class="popup-registration__block-input">
+        <input
+        name="password"
+        type="text"
+        class="popup-registration__input popup-registration__input-password"
+        placeholder="password"
+        />
+        <label for="" class="popup-registration__label">Пароль</label>
+      </div>
+      <button class="popup-registration__button-submit">
+        Отправить
+      </button>
+      </div>
+   </div>
 
     <!-- <a
       href="https://yandex.ru/maps/?um=constructor%3A7d4de631fdf4e174191ba2931ef6c8edb154f1f59b2a36e4b30fee7df556c090&amp;source=constructorStatic"

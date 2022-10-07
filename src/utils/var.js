@@ -1,6 +1,9 @@
 export const page = document.querySelector('.page');
 const content = page.querySelector('.content');
 
+export const menuButtonSignup = page.querySelector('.header__menu-button-sugnup');
+export const menuButtonSignin = page.querySelector('.header__menu-button-sugnin');
+
 const ads = content.querySelector('.ads');
 export const adsBlocks = ads.querySelectorAll('.ads__block');
 export const adsBlockImage = ads.querySelectorAll('.ads__block_image');
@@ -34,4 +37,11 @@ export const aboutProjectText = aboutProjectBlock.querySelector('.about-project_
 
 export const popupTemplate = page.querySelector('#popup');
 export const PopupSostavSlovoTemplate = page.querySelector('#popup-test-sostavSlovo');
+
+export const popupRegistration = page.querySelector('.popup-registration');
+export const popupRegistrationClose = popupRegistration.querySelector('.popup-registration__close');
+export const popupRegistrationInputName = popupRegistration.querySelector('.popup-registration__input-name');
+export const popupRegistrationInputEmail = popupRegistration.querySelector('.popup-registration__input-email');
+export const popupRegistrationInputPassword = popupRegistration.querySelector('.popup-registration__input-password');
+export const popupRegistrationButtonSubmit = popupRegistration.querySelector('.popup-registration__button-submit')
 

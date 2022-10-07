@@ -8,6 +8,8 @@
 @import url('../blocks/header/__menu/header__menu.css');
 @import url('../blocks/header/__menu/header__menu-item.css');
 @import url('../blocks/header/__menu/header__menu-link.css');
+@import url('../blocks/header/__menu/header__menu-button-sugnin.css');
+@import url('../blocks/header/__menu/header__menu-button-sugnup.css');
 @import url('../blocks/header/__image/header__image.css');
 
 @import url('../blocks/content/content.css');
@@ -127,3 +129,13 @@
 @import url('../blocks/title-section/title-section.css');
 @import url('../blocks/text-block/text-block.css');
 @import url('../blocks/font/font-size-14px.css');
+
+@import url('../blocks/popup-registration/popup-registration.css');
+@import url('../blocks/popup-registration/__show/popup-registration__swow.css');
+@import url('../blocks/popup-registration/__container/popup-registration__container.css');
+@import url('../blocks/popup-registration/__button-submit/popup-registration__button-submit.css');
+@import url('../blocks/popup-registration/__title/popup-registration__title.css');
+@import url('../blocks/popup-registration/__block-input/popup-registration__block-input.css');
+@import url('../blocks/popup-registration/__label/popup-registration__label.css');
+@import url('../blocks/popup-registration/__input/popup-registration__input.css');
+@import url('../blocks/popup-registration/__close/popup-registration__close.css');

@@ -7,6 +7,8 @@ import { blockInfoAboutProject } from "../utils/block-info-about-project.js";
 import { blockInfoAbout } from "../utils/block-info-about.js";
 import {
   page,
+  menuButtonSignup,
+  menuButtonSignin,
   adsBlocks,
   adsBlockImage,
   adsBlockTitle,
@@ -28,14 +30,32 @@ import {
   // aboutBlockImage,
   // aboutBlockText,
   popupTemplate,
-  PopupSostavSlovoTemplate,
+  PopupSostavSlovoTemplate
 } from "../utils/var.js";
 import Popup from "../components/Popup.js";
 import PopupNaideSlog from "../components/PopupNaideSlog.js";
 import PopupSostavSlovo from "../components/PopupSostavSlovo.js";
 import PopupNaideBukvu from "../components/PopupNaideBukvu.js";
 import PopupSostavPredlogenie from "../components/PopupSostavPredlogenie.js";
+import PopupRegistration from "../components/PopupSignUp.js";
 import {sloge} from "../utils/sloge.js";
+
+import {SignIn, SignUp} from "../components/Api.js";
+
+// SignIn();
+// SignUp();
+
+
+
+const popupRegistration = new PopupRegistration();
+popupRegistration.setEventListenerButtonClose();
+
+
+menuButtonSignup.addEventListener('click', ()=>{
+  popupRegistration.open();
+})
+
+popupRegistration.setEventListenerButtonSubmit();
 
 //Добавляю Названия и текст к карточкам на главную страницу
 
@@ -113,13 +133,8 @@ methodologyBlocks.forEach((item, i) => {
       new PopupSostavSlovo(PopupSostavSlovoTemplate, sloge),
       new PopupSostavPredlogenie(PopupSostavSlovoTemplate, sloge),
     ];
-    // const popupSostavSlovo = new PopupSostavSlovo(PopupSostavSlovoTemplate, sloge);
     page.append(
-      // popupSostavSlovo.generatePopup(
         zadanie[i].generatePopup(
-        // item.querySelector(".methodology__block_image"),
-        // item.querySelector(".methodology__block_title"),
-        // item.querySelector(".methodology__block_text")
       )
     );
   });

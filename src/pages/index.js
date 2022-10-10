@@ -55,7 +55,7 @@ menuButtonSignup.addEventListener('click', ()=>{
   popupRegistration.open();
 })
 
-popupRegistration.setEventListenerButtonSubmit();
+popupRegistration.setEventListenerFormRegistrationSubmit();
 
 //Добавляю Названия и текст к карточкам на главную страницу
 

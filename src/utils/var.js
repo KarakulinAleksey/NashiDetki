@@ -39,6 +39,8 @@ export const popupTemplate = page.querySelector('#popup');
 export const PopupSostavSlovoTemplate = page.querySelector('#popup-test-sostavSlovo');
 
 export const popupRegistration = page.querySelector('.popup-registration');
+export const popupFormRegistration = document.forms.formRegistration;
+export const popupFormRegistrationContainer = popupRegistration.querySelector('.popup-registration__container');
 export const popupRegistrationClose = popupRegistration.querySelector('.popup-registration__close');
 export const popupRegistrationInputName = popupRegistration.querySelector('.popup-registration__input-name');
 export const popupRegistrationInputEmail = popupRegistration.querySelector('.popup-registration__input-email');

@@ -409,36 +409,38 @@
       <div class="popup-registration__container">
         <img src="<%=require('./image/CloseIcon.svg')%>" class="popup-registration__close" alt="кнопка закрытия формы">
         <h2 class="popup-registration__title">Регистрация</h2>
+        <form class="popup-registration__form" name="formRegistration" novalidate>
+          <div class="popup-registration__block-input">
+            <input
+            name="name"
+            type="text"
+            class="popup-registration__input popup-registration__input-name"
+            placeholder="name"
+            />
+            <label for="" class="popup-registration__label">Имя</label>
+          </div>
         <div class="popup-registration__block-input">
           <input
-          name="name"
+          name="email"
           type="text"
-          class="popup-registration__input popup-registration__input-name"
-          placeholder="name"
+          class="popup-registration__input popup-registration__input-email"
+          placeholder="email"
           />
-          <label for="" class="popup-registration__label">Имя</label>
+          <label for="" class="popup-registration__label">Email</label>
         </div>
-      <div class="popup-registration__block-input">
-        <input
-        name="email"
-        type="text"
-        class="popup-registration__input popup-registration__input-email"
-        placeholder="email"
-        />
-        <label for="" class="popup-registration__label">Email</label>
-      </div>
-      <div class="popup-registration__block-input">
-        <input
-        name="password"
-        type="text"
-        class="popup-registration__input popup-registration__input-password"
-        placeholder="password"
-        />
-        <label for="" class="popup-registration__label">Пароль</label>
-      </div>
-      <button class="popup-registration__button-submit">
-        Отправить
-      </button>
+        <div class="popup-registration__block-input">
+          <input
+          name="password"
+          type="text"
+          class="popup-registration__input popup-registration__input-password"
+          placeholder="password"
+          />
+          <label for="" class="popup-registration__label">Пароль</label>
+        </div>
+        <button type="submit" class="popup-registration__button-submit">
+          Отправить
+        </button>
+        </form>
       </div>
    </div>
 

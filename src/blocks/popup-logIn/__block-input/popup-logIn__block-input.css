@@ -1,0 +1,9 @@
+.popup-logIn__block-input {
+  position: relative;
+  margin-bottom: 32px;
+  display: flex;
+  flex-flow: column-reverse;
+  width: 100%;
+}
+
+

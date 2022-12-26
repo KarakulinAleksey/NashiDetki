@@ -133,9 +133,21 @@
 @import url('../blocks/popup-registration/popup-registration.css');
 @import url('../blocks/popup-registration/__show/popup-registration__swow.css');
 @import url('../blocks/popup-registration/__container/popup-registration__container.css');
+@import url('../blocks/popup-registration/__form/popup-registration__form.css');
 @import url('../blocks/popup-registration/__button-submit/popup-registration__button-submit.css');
 @import url('../blocks/popup-registration/__title/popup-registration__title.css');
 @import url('../blocks/popup-registration/__block-input/popup-registration__block-input.css');
 @import url('../blocks/popup-registration/__label/popup-registration__label.css');
 @import url('../blocks/popup-registration/__input/popup-registration__input.css');
 @import url('../blocks/popup-registration/__close/popup-registration__close.css');
+
+@import url('../blocks/popup-logIn/popup-logIn.css');
+@import url('../blocks/popup-logIn/__show/popup-logIn__swow.css');
+@import url('../blocks/popup-logIn/__container/popup-logIn__container.css');
+@import url('../blocks/popup-logIn/__form/popup-logIn__form.css');
+@import url('../blocks/popup-logIn/__button-submit/popup-logIn__button-submit.css');
+@import url('../blocks/popup-logIn/__title/popup-logIn__title.css');
+@import url('../blocks/popup-logIn/__block-input/popup-logIn__block-input.css');
+@import url('../blocks/popup-logIn/__label/popup-logIn__label.css');
+@import url('../blocks/popup-logIn/__input/popup-logIn__input.css');
+@import url('../blocks/popup-logIn/__close/popup-logIn__close.css');

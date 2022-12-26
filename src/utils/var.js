@@ -47,3 +47,11 @@ export const popupRegistrationInputEmail = popupRegistration.querySelector('.pop
 export const popupRegistrationInputPassword = popupRegistration.querySelector('.popup-registration__input-password');
 export const popupRegistrationButtonSubmit = popupRegistration.querySelector('.popup-registration__button-submit')
 
+export const popupLogIn = page.querySelector('.popup-logIn');
+export const popupFormLogIn = document.forms.formlogIn;
+export const popupFormLogInContainer = popupLogIn.querySelector('.popup-logIn__container');
+export const popupLogInClose = popupLogIn.querySelector('.popup-logIn__close');
+export const popupLogInInputName = popupLogIn.querySelector('.popup-logIn__input-name');
+export const popupLogInInputEmail = popupLogIn.querySelector('.popup-logIn__input-email');
+export const popupLogInInputPassword = popupLogIn.querySelector('.popup-logIn__input-password');
+export const popupLogInButtonSubmit = popupLogIn.querySelector('.popup-logIn__button-submit')

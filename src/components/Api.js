@@ -47,14 +47,14 @@ function regSignUp( name, email, password ){
   })
 }
 
-function regSignIn(){
+function regSignIn(email, password){
   fetch(`${baseUrl}/signin`,{
     method: "POST",
     headers: headers,
     credentials: 'include',
     body: JSON.stringify({
-      email: "alex@mail.ru",
-      password: "123456"
+      email: email,
+      password: password
     })
   })
     .then(_checkResponse)

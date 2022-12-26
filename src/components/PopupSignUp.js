@@ -45,6 +45,7 @@ export default class PopupRegistration {
       regSignUp(this._popupFormRegistration.name.value,
                 this._popupFormRegistration.email.value,
                 this._popupFormRegistration.password.value,);
+      this.close();
     })
   }
 }

@@ -444,6 +444,36 @@
       </div>
    </div>
 
+   <div class="popup-logIn">
+    <div class="popup-logIn__container">
+      <img src="<%=require('./image/CloseIcon.svg')%>" class="popup-logIn__close" alt="кнопка закрытия формы">
+      <h2 class="popup-logIn__title">Войти</h2>
+      <form class="popup-logIn__form" name="formlogIn" novalidate>
+      <div class="popup-logIn__block-input">
+        <input
+        name="email"
+        type="text"
+        class="popup-logIn__input popup-logIn__input-email"
+        placeholder="email"
+        />
+        <label for="" class="popup-logIn__label">Email</label>
+      </div>
+      <div class="popup-logIn__block-input">
+        <input
+        name="password"
+        type="text"
+        class="popup-logIn__input popup-logIn__input-password"
+        placeholder="password"
+        />
+        <label for="" class="popup-logIn__label">Пароль</label>
+      </div>
+      <button type="submit" class="popup-logIn__button-submit">
+        Войти
+      </button>
+      </form>
+    </div>
+ </div>
+
     <!-- <a
       href="https://yandex.ru/maps/?um=constructor%3A7d4de631fdf4e174191ba2931ef6c8edb154f1f59b2a36e4b30fee7df556c090&amp;source=constructorStatic"
       target="_blank"

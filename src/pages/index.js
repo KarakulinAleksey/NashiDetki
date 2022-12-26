@@ -38,6 +38,7 @@ import PopupSostavSlovo from "../components/PopupSostavSlovo.js";
 import PopupNaideBukvu from "../components/PopupNaideBukvu.js";
 import PopupSostavPredlogenie from "../components/PopupSostavPredlogenie.js";
 import PopupRegistration from "../components/PopupSignUp.js";
+import PopupLogIn from "../components/PopupSignIn.js";
 import {sloge} from "../utils/sloge.js";
 
 import {SignIn, SignUp} from "../components/Api.js";
@@ -45,10 +46,9 @@ import {SignIn, SignUp} from "../components/Api.js";
 // SignIn();
 // SignUp();
 
-
-
 const popupRegistration = new PopupRegistration();
 popupRegistration.setEventListenerButtonClose();
+
 
 
 menuButtonSignup.addEventListener('click', ()=>{
@@ -56,6 +56,15 @@ menuButtonSignup.addEventListener('click', ()=>{
 })
 
 popupRegistration.setEventListenerFormRegistrationSubmit();
+
+const popupLogIn = new PopupLogIn();
+popupLogIn.setEventListenerButtonClose();
+
+menuButtonSignin.addEventListener('click', ()=>{
+  popupLogIn.open();
+})
+
+popupLogIn.setEventListenerFormLogInSubmit();
 
 //Добавляю Названия и текст к карточкам на главную страницу
 

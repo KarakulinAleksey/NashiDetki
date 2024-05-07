@@ -3,7 +3,7 @@ import vocklZnack from '../image/восклицательный знак.jpg'
 export const blockInfoAds = [
   {
     adsImage: vocklZnack,
-    adsTitle: "Объявление 02.09.2024г.",
+    adsTitle: "Объявление 07.05.2024г.",
     adsText:
       `ДОРОГИЕ ДРУЗЬЯ!!!
       Я поздравляю Всех с началом учебного года!
